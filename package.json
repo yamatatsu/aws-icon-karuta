@@ -1,0 +1,20 @@
+{
+  "name": "aws-karuta",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run -w aws-karuta dev",
+    "build": "npm run -w aws-karuta build",
+    "preview": "npm run -w aws-karuta preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "prettier": "^2.8.1"
+  }
+}
