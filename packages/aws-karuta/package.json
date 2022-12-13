@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "gen-icon-index-files": "node scripts/create-icon-files.js"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -16,7 +17,9 @@
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
+    "camelcase": "^7.0.1",
     "typescript": "^4.6.4",
-    "vite": "^3.2.3"
+    "vite": "^3.2.3",
+    "vite-plugin-svgr": "^2.2.2"
   }
 }
