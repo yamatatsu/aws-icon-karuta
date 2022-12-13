@@ -18,7 +18,7 @@ function createIndexFiles(tree) {
           .filter((fileName) => fileName !== ".DS_Store")
           .map((fileName) => {
             const moduleName = camelCase(fileName.replace(/\&/g, ""));
-            return `export { ReactComponent as ${moduleName} } from './${fileName}';`;
+            return `export { default as ${moduleName} } from './${fileName}';`;
           })
       );
     } else {

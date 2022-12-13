@@ -1,1 +1,1 @@
-export { ReactComponent as archAwsRoboMaker48Svg } from './Arch_AWS-RoboMaker_48.svg';
+export { default as archAwsRoboMaker48Svg } from './Arch_AWS-RoboMaker_48.svg';

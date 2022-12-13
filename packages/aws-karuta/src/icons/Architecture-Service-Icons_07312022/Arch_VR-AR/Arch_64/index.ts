@@ -1,1 +1,1 @@
-export { ReactComponent as archAmazonSumerian64Svg } from './Arch_Amazon-Sumerian_64.svg';
+export { default as archAmazonSumerian64Svg } from './Arch_Amazon-Sumerian_64.svg';

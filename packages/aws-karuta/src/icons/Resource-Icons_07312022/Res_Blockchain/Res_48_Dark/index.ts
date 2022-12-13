@@ -1,1 +1,1 @@
-export { ReactComponent as resAmazonManagedBlockchainBlockchain48DarkSvg } from './Res_Amazon-Managed-Blockchain_Blockchain_48_Dark.svg';
+export { default as resAmazonManagedBlockchainBlockchain48DarkSvg } from './Res_Amazon-Managed-Blockchain_Blockchain_48_Dark.svg';

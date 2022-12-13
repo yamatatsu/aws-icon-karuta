@@ -1,1 +1,1 @@
-export { ReactComponent as archAmazonBraket48Svg } from './Arch_Amazon-Braket_48.svg';
+export { default as archAmazonBraket48Svg } from './Arch_Amazon-Braket_48.svg';

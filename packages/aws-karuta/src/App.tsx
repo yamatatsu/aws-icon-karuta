@@ -5,18 +5,18 @@ import "./App.css";
 export default function App() {
   return (
     <div className="App">
-      {flat(icons).map((Component, index) => (
-        <Component key={index} />
+      {flat(icons).map((icon, index) => (
+        <img key={index} src={icon} className="logo react" alt="React logo" />
       ))}
     </div>
   );
 }
 
 interface Icons {
-  [key: string]: React.FunctionComponent | Icons;
+  [key: string]: string | Icons;
 }
 
-const flat = (_icons: Icons): React.FunctionComponent[] =>
+const flat = (_icons: Icons): string[] =>
   Object.values(_icons).flatMap((val) =>
-    typeof val === "function" ? val : flat(val)
+    typeof val === "string" ? val : flat(val)
   );

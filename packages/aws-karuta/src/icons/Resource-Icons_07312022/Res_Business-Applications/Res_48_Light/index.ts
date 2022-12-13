@@ -1,2 +1,2 @@
-export { ReactComponent as resAmazonPinpointJourney48LightSvg } from './Res_Amazon-Pinpoint_Journey_48_Light.svg';
-export { ReactComponent as resAmazonSimpleEmailServiceEmail48LightSvg } from './Res_Amazon-Simple-Email-Service_Email_48_Light.svg';
+export { default as resAmazonPinpointJourney48LightSvg } from './Res_Amazon-Pinpoint_Journey_48_Light.svg';
+export { default as resAmazonSimpleEmailServiceEmail48LightSvg } from './Res_Amazon-Simple-Email-Service_Email_48_Light.svg';

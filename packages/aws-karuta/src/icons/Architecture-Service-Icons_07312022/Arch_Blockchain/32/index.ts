@@ -1,2 +1,2 @@
-export { ReactComponent as archAmazonManagedBlockchain32Svg } from './Arch_Amazon-Managed-Blockchain_32.svg';
-export { ReactComponent as archAmazonQuantumLedgerDatabase32Svg } from './Arch_Amazon-Quantum-Ledger-Database_32.svg';
+export { default as archAmazonManagedBlockchain32Svg } from './Arch_Amazon-Managed-Blockchain_32.svg';
+export { default as archAmazonQuantumLedgerDatabase32Svg } from './Arch_Amazon-Quantum-Ledger-Database_32.svg';

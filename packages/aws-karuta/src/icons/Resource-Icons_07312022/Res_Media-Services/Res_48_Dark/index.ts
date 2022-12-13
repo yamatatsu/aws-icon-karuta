@@ -1,1 +1,1 @@
-export { ReactComponent as resAwsCloudDigitalInterface48DarkSvg } from './Res_AWS-Cloud-Digital-Interface_48_Dark.svg';
+export { default as resAwsCloudDigitalInterface48DarkSvg } from './Res_AWS-Cloud-Digital-Interface_48_Dark.svg';

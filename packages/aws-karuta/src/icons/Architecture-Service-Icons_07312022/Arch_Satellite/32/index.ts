@@ -1,1 +1,1 @@
-export { ReactComponent as archAwsGroundStation32Svg } from './Arch_AWS-Ground-Station_32.svg';
+export { default as archAwsGroundStation32Svg } from './Arch_AWS-Ground-Station_32.svg';
