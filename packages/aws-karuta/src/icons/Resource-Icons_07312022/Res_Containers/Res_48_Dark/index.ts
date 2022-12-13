@@ -1,0 +1,9 @@
+export { ReactComponent as resAmazonElasticContainerRegistryImage48DarkSvg } from './Res_Amazon-Elastic-Container-Registry_Image_48_Dark.svg';
+export { ReactComponent as resAmazonElasticContainerRegistryRegistry48DarkSvg } from './Res_Amazon-Elastic-Container-Registry_Registry_48_Dark.svg';
+export { ReactComponent as resAmazonElasticContainerServiceContainer148DarkSvg } from './Res_Amazon-Elastic-Container-Service_Container-1_48_Dark.svg';
+export { ReactComponent as resAmazonElasticContainerServiceContainer248DarkSvg } from './Res_Amazon-Elastic-Container-Service_Container-2_48_Dark.svg';
+export { ReactComponent as resAmazonElasticContainerServiceContainer348DarkSvg } from './Res_Amazon-Elastic-Container-Service_Container-3_48_Dark.svg';
+export { ReactComponent as resAmazonElasticContainerServiceCopilotCli48DarkSvg } from './Res_Amazon-Elastic-Container-Service_Copilot-CLI_48_Dark.svg';
+export { ReactComponent as resAmazonElasticContainerServiceEcsAnywhere48DarkSvg } from './Res_Amazon-Elastic-Container-Service_ECS-Anywhere_48_Dark.svg';
+export { ReactComponent as resAmazonElasticContainerServiceService48DarkSvg } from './Res_Amazon-Elastic-Container-Service_Service_48_Dark.svg';
+export { ReactComponent as resAmazonElasticContainerServiceTask48DarkSvg } from './Res_Amazon-Elastic-Container-Service_Task_48_Dark.svg';

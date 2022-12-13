@@ -1,0 +1,2 @@
+export { ReactComponent as resAmazonPinpointJourney48DarkSvg } from './Res_Amazon-Pinpoint_Journey_48_Dark.svg';
+export { ReactComponent as resAmazonSimpleEmailServiceEmail48DarkSvg } from './Res_Amazon-Simple-Email-Service_Email_48_Dark.svg';

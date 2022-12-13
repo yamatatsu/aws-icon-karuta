@@ -1,0 +1,14 @@
+export { ReactComponent as resAmazonApiGatewayEndpoint48DarkSvg } from './Res_Amazon-API-Gateway_Endpoint_48_Dark.svg';
+export { ReactComponent as resAmazonEventBridgeCustomEventBus48DarkSvg } from './Res_Amazon-EventBridge_Custom-Event-Bus_48_Dark.svg';
+export { ReactComponent as resAmazonEventBridgeDefaultEventBus48DarkSvg } from './Res_Amazon-EventBridge_Default-Event-Bus_48_Dark.svg';
+export { ReactComponent as resAmazonEventBridgeEvent48DarkSvg } from './Res_Amazon-EventBridge_Event_48_Dark.svg';
+export { ReactComponent as resAmazonEventBridgeRule48DarkSvg } from './Res_Amazon-EventBridge_Rule_48_Dark.svg';
+export { ReactComponent as resAmazonEventBridgeSaasPartnerEvent48DarkSvg } from './Res_Amazon-EventBridge_Saas-Partner-Event_48_Dark.svg';
+export { ReactComponent as resAmazonEventBridgeSchemaRegistry48DarkSvg } from './Res_Amazon-EventBridge_Schema-Registry_48_Dark.svg';
+export { ReactComponent as resAmazonEventBridgeSchema48DarkSvg } from './Res_Amazon-EventBridge_Schema_48_Dark.svg';
+export { ReactComponent as resAmazonMqBroker48DarkSvg } from './Res_Amazon-MQ_Broker_48_Dark.svg';
+export { ReactComponent as resAmazonSimpleNotificationServiceEmailNotification48DarkSvg } from './Res_Amazon-Simple-Notification-Service_Email-Notification_48_Dark.svg';
+export { ReactComponent as resAmazonSimpleNotificationServiceHttpNotification48DarkSvg } from './Res_Amazon-Simple-Notification-Service_HTTP-Notification_48_Dark.svg';
+export { ReactComponent as resAmazonSimpleNotificationServiceTopic48DarkSvg } from './Res_Amazon-Simple-Notification-Service_Topic_48_Dark.svg';
+export { ReactComponent as resAmazonSimpleQueueServiceMessage48DarkSvg } from './Res_Amazon-Simple-Queue-Service_Message_48_Dark.svg';
+export { ReactComponent as resAmazonSimpleQueueServiceQueue48DarkSvg } from './Res_Amazon-Simple-Queue-Service_Queue_48_Dark.svg';

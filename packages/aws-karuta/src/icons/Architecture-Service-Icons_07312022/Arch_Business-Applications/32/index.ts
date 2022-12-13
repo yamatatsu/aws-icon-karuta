@@ -1,0 +1,12 @@
+export { ReactComponent as archAlexaForBusiness32Svg } from './Arch_Alexa-For-Business_32.svg';
+export { ReactComponent as archAmazonChimeSdk32Svg } from './Arch_Amazon-Chime-SDK_32.svg';
+export { ReactComponent as archAmazonChimeVoiceConnector32Svg } from './Arch_Amazon-Chime-Voice-Connector_32.svg';
+export { ReactComponent as archAmazonChime32Svg } from './Arch_Amazon-Chime_32.svg';
+export { ReactComponent as archAmazonConnect32Svg } from './Arch_Amazon-Connect_32.svg';
+export { ReactComponent as archAmazonHoneycode32Svg } from './Arch_Amazon-Honeycode_32.svg';
+export { ReactComponent as archAmazonPinpointApIs32Svg } from './Arch_Amazon-Pinpoint-APIs_32.svg';
+export { ReactComponent as archAmazonPinpoint32Svg } from './Arch_Amazon-Pinpoint_32.svg';
+export { ReactComponent as archAmazonSimpleEmailService32Svg } from './Arch_Amazon-Simple-Email-Service_32.svg';
+export { ReactComponent as archAmazonWorkDocsSdk32Svg } from './Arch_Amazon-WorkDocs-SDK_32.svg';
+export { ReactComponent as archAmazonWorkDocs32Svg } from './Arch_Amazon-WorkDocs_32.svg';
+export { ReactComponent as archAmazonWorkMail32Svg } from './Arch_Amazon-WorkMail_32.svg';

@@ -1,0 +1,16 @@
+export { ReactComponent as archAwsElementalAppliancesSoftware64Svg } from './Arch_AWS-Elemental-Appliances-&-Software_64.svg';
+export { ReactComponent as archAwsElementalConductor64Svg } from './Arch_AWS-Elemental-Conductor_64.svg';
+export { ReactComponent as archAwsElementalDelta64Svg } from './Arch_AWS-Elemental-Delta_64.svg';
+export { ReactComponent as archAwsElementalLink64Svg } from './Arch_AWS-Elemental-Link_64.svg';
+export { ReactComponent as archAwsElementalLive64Svg } from './Arch_AWS-Elemental-Live_64.svg';
+export { ReactComponent as archAwsElementalMediaConnect64Svg } from './Arch_AWS-Elemental-MediaConnect_64.svg';
+export { ReactComponent as archAwsElementalMediaConvert64Svg } from './Arch_AWS-Elemental-MediaConvert_64.svg';
+export { ReactComponent as archAwsElementalMediaLive64Svg } from './Arch_AWS-Elemental-MediaLive_64.svg';
+export { ReactComponent as archAwsElementalMediaPackage64Svg } from './Arch_AWS-Elemental-MediaPackage_64.svg';
+export { ReactComponent as archAwsElementalMediaStore64Svg } from './Arch_AWS-Elemental-MediaStore_64.svg';
+export { ReactComponent as archAwsElementalMediaTailor64Svg } from './Arch_AWS-Elemental-MediaTailor_64.svg';
+export { ReactComponent as archAwsElementalServer64Svg } from './Arch_AWS-Elemental-Server_64.svg';
+export { ReactComponent as archAmazonElasticTranscoder64Svg } from './Arch_Amazon-Elastic-Transcoder_64.svg';
+export { ReactComponent as archAmazonInteractiveVideoService64Svg } from './Arch_Amazon-Interactive-Video-Service_64.svg';
+export { ReactComponent as archAmazonKinesisVideoStreams64Svg } from './Arch_Amazon-Kinesis-Video-Streams_64.svg';
+export { ReactComponent as archAmazonNimbleStudio64Svg } from './Arch_Amazon-Nimble-Studio_64.svg';

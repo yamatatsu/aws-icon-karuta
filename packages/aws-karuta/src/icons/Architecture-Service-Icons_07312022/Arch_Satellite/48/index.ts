@@ -1,0 +1,1 @@
+export { ReactComponent as archAwsGroundStation48Svg } from './Arch_AWS-Ground-Station_48.svg';

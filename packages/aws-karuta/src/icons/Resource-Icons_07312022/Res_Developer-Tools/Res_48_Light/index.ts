@@ -1,0 +1,1 @@
+export { ReactComponent as resAwsCloud9Cloud948LightSvg } from './Res_AWS-Cloud9_Cloud9_48_Light.svg';

@@ -1,0 +1,12 @@
+export { ReactComponent as resAwsDatasyncAgent48DarkSvg } from './Res_AWS-Datasync_Agent_48_Dark.svg';
+export { ReactComponent as resAwsMainframeModernizationAnalyzer48DarkSvg } from './Res_AWS-Mainframe-Modernization_Analyzer_48_Dark.svg';
+export { ReactComponent as resAwsMainframeModernizationCompiler48DarkSvg } from './Res_AWS-Mainframe-Modernization_Compiler_48_Dark.svg';
+export { ReactComponent as resAwsMainframeModernizationConverter48DarkSvg } from './Res_AWS-Mainframe-Modernization_Converter_48_Dark.svg';
+export { ReactComponent as resAwsMainframeModernizationDeveloper48DarkSvg } from './Res_AWS-Mainframe-Modernization_Developer_48_Dark.svg';
+export { ReactComponent as resAwsMainframeModernizationRuntime48DarkSvg } from './Res_AWS-Mainframe-Modernization_Runtime_48_Dark.svg';
+export { ReactComponent as resAwsMigrationHubRefactorSpacesApplications48DarkSvg } from './Res_AWS-Migration-Hub_Refactor-Spaces-Applications_48_Dark.svg';
+export { ReactComponent as resAwsMigrationHubRefactorSpacesEnvironments48DarkSvg } from './Res_AWS-Migration-Hub_Refactor-Spaces-Environments_48_Dark.svg';
+export { ReactComponent as resAwsMigrationHubRefactorSpacesServices48DarkSvg } from './Res_AWS-Migration-Hub_Refactor-Spaces-Services_48_Dark.svg';
+export { ReactComponent as resAwsTransferFamilyAwsFtps48DarkSvg } from './Res_AWS-Transfer-Family_AWS-FTPS_48_Dark.svg';
+export { ReactComponent as resAwsTransferFamilyAwsFtp48DarkSvg } from './Res_AWS-Transfer-Family_AWS-FTP_48_Dark.svg';
+export { ReactComponent as resAwsTransferFamilyAwsSftp48DarkSvg } from './Res_AWS-Transfer-Family_AWS-SFTP_48_Dark.svg';

@@ -1,0 +1,16 @@
+export { ReactComponent as archAwsIoT1Click64Svg } from './Arch_AWS-IoT-1-Click_64.svg';
+export { ReactComponent as archAwsIoTAnalytics64Svg } from './Arch_AWS-IoT-Analytics_64.svg';
+export { ReactComponent as archAwsIoTButton64Svg } from './Arch_AWS-IoT-Button_64.svg';
+export { ReactComponent as archAwsIoTCore64Svg } from './Arch_AWS-IoT-Core_64.svg';
+export { ReactComponent as archAwsIoTDeviceDefender64Svg } from './Arch_AWS-IoT-Device-Defender_64.svg';
+export { ReactComponent as archAwsIoTDeviceManagement64Svg } from './Arch_AWS-IoT-Device-Management_64.svg';
+export { ReactComponent as archAwsIoTEduKit64Svg } from './Arch_AWS-IoT-EduKit_64.svg';
+export { ReactComponent as archAwsIoTEvents64Svg } from './Arch_AWS-IoT-Events_64.svg';
+export { ReactComponent as archAwsIoTExpressLink64Svg } from './Arch_AWS-IoT-ExpressLink_64.svg';
+export { ReactComponent as archAwsIoTFleetWise64Svg } from './Arch_AWS-IoT-FleetWise_64.svg';
+export { ReactComponent as archAwsIoTGreengrass64Svg } from './Arch_AWS-IoT-Greengrass_64.svg';
+export { ReactComponent as archAwsIoTRoboRunner64Svg } from './Arch_AWS-IoT-RoboRunner_64.svg';
+export { ReactComponent as archAwsIoTSiteWise64Svg } from './Arch_AWS-IoT-SiteWise_64.svg';
+export { ReactComponent as archAwsIoTThingsGraph64Svg } from './Arch_AWS-IoT-Things-Graph_64.svg';
+export { ReactComponent as archAwsIoTTwinMaker64Svg } from './Arch_AWS-IoT-TwinMaker_64.svg';
+export { ReactComponent as archFreeRtos64Svg } from './Arch_FreeRTOS_64.svg';

@@ -1,0 +1,14 @@
+export { ReactComponent as archAwsCloudControlApi48Svg } from './Arch_AWS-Cloud-Control-API_48.svg';
+export { ReactComponent as archAwsCloudDevelopmentKit48Svg } from './Arch_AWS-Cloud-Development-Kit_48.svg';
+export { ReactComponent as archAwsCloud948Svg } from './Arch_AWS-Cloud9_48.svg';
+export { ReactComponent as archAwsCloudShell48Svg } from './Arch_AWS-CloudShell_48.svg';
+export { ReactComponent as archAwsCodeArtifact48Svg } from './Arch_AWS-CodeArtifact_48.svg';
+export { ReactComponent as archAwsCodeBuild48Svg } from './Arch_AWS-CodeBuild_48.svg';
+export { ReactComponent as archAwsCodeCommit48Svg } from './Arch_AWS-CodeCommit_48.svg';
+export { ReactComponent as archAwsCodeDeploy48Svg } from './Arch_AWS-CodeDeploy_48.svg';
+export { ReactComponent as archAwsCodePipeline48Svg } from './Arch_AWS-CodePipeline_48.svg';
+export { ReactComponent as archAwsCodeStar48Svg } from './Arch_AWS-CodeStar_48.svg';
+export { ReactComponent as archAwsCommandLineInterface48Svg } from './Arch_AWS-Command-Line-Interface_48.svg';
+export { ReactComponent as archAwsToolsAndSdKs48Svg } from './Arch_AWS-Tools-and-SDKs_48.svg';
+export { ReactComponent as archAwsXRay48Svg } from './Arch_AWS-X-Ray_48.svg';
+export { ReactComponent as archAmazonCorretto48Svg } from './Arch_Amazon-Corretto_48.svg';

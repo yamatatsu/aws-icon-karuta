@@ -1,0 +1,16 @@
+export { ReactComponent as archAwsElementalAppliancesSoftware32Svg } from './Arch_AWS-Elemental-Appliances-&-Software_32.svg';
+export { ReactComponent as archAwsElementalConductor32Svg } from './Arch_AWS-Elemental-Conductor_32.svg';
+export { ReactComponent as archAwsElementalDelta32Svg } from './Arch_AWS-Elemental-Delta_32.svg';
+export { ReactComponent as archAwsElementalLink32Svg } from './Arch_AWS-Elemental-Link_32.svg';
+export { ReactComponent as archAwsElementalLive32Svg } from './Arch_AWS-Elemental-Live_32.svg';
+export { ReactComponent as archAwsElementalMediaConnect32Svg } from './Arch_AWS-Elemental-MediaConnect_32.svg';
+export { ReactComponent as archAwsElementalMediaConvert32Svg } from './Arch_AWS-Elemental-MediaConvert_32.svg';
+export { ReactComponent as archAwsElementalMediaLive32Svg } from './Arch_AWS-Elemental-MediaLive_32.svg';
+export { ReactComponent as archAwsElementalMediaPackage32Svg } from './Arch_AWS-Elemental-MediaPackage_32.svg';
+export { ReactComponent as archAwsElementalMediaStore32Svg } from './Arch_AWS-Elemental-MediaStore_32.svg';
+export { ReactComponent as archAwsElementalMediaTailor32Svg } from './Arch_AWS-Elemental-MediaTailor_32.svg';
+export { ReactComponent as archAwsElementalServer32Svg } from './Arch_AWS-Elemental-Server_32.svg';
+export { ReactComponent as archAmazonElasticTranscoder32Svg } from './Arch_Amazon-Elastic-Transcoder_32.svg';
+export { ReactComponent as archAmazonInteractiveVideoService32Svg } from './Arch_Amazon-Interactive-Video-Service_32.svg';
+export { ReactComponent as archAmazonKinesisVideoStreams32Svg } from './Arch_Amazon-Kinesis-Video-Streams_32.svg';
+export { ReactComponent as archAmazonNimbleStudio32Svg } from './Arch_Amazon-Nimble-Studio_32.svg';

@@ -1,0 +1,1 @@
+export { ReactComponent as archAmazonSumerian16Svg } from './Arch_Amazon-Sumerian_16.svg';

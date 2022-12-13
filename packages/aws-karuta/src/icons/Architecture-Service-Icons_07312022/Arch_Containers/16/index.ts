@@ -1,0 +1,9 @@
+export { ReactComponent as archAwsFargate16Svg } from './Arch_AWS-Fargate_16.svg';
+export { ReactComponent as archAmazonEcsAnywhere16Svg } from './Arch_Amazon-ECS-Anywhere_16.svg';
+export { ReactComponent as archAmazonEksAnywhere16Svg } from './Arch_Amazon-EKS-Anywhere_16.svg';
+export { ReactComponent as archAmazonEksCloud16Svg } from './Arch_Amazon-EKS-Cloud_16.svg';
+export { ReactComponent as archAmazonEksDistro16Svg } from './Arch_Amazon-EKS-Distro_16.svg';
+export { ReactComponent as archAmazonElasticContainerRegistry16Svg } from './Arch_Amazon-Elastic-Container-Registry_16.svg';
+export { ReactComponent as archAmazonElasticContainerService16Svg } from './Arch_Amazon-Elastic-Container-Service_16.svg';
+export { ReactComponent as archAmazonElasticKubernetesService16Svg } from './Arch_Amazon-Elastic-Kubernetes-Service_16.svg';
+export { ReactComponent as archRedHatOpenShift16Svg } from './Arch_Red-Hat-OpenShift_16.svg';

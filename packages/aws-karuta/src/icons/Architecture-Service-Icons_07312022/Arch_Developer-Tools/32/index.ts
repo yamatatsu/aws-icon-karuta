@@ -1,0 +1,14 @@
+export { ReactComponent as archAwsCloudControlApi32Svg } from './Arch_AWS-Cloud-Control-API_32.svg';
+export { ReactComponent as archAwsCloudDevelopmentKit32Svg } from './Arch_AWS-Cloud-Development-Kit_32.svg';
+export { ReactComponent as archAwsCloud932Svg } from './Arch_AWS-Cloud9_32.svg';
+export { ReactComponent as archAwsCloudShell32Svg } from './Arch_AWS-CloudShell_32.svg';
+export { ReactComponent as archAwsCodeArtifact32Svg } from './Arch_AWS-CodeArtifact_32.svg';
+export { ReactComponent as archAwsCodeBuild32Svg } from './Arch_AWS-CodeBuild_32.svg';
+export { ReactComponent as archAwsCodeCommit32Svg } from './Arch_AWS-CodeCommit_32.svg';
+export { ReactComponent as archAwsCodeDeploy32Svg } from './Arch_AWS-CodeDeploy_32.svg';
+export { ReactComponent as archAwsCodePipeline32Svg } from './Arch_AWS-CodePipeline_32.svg';
+export { ReactComponent as archAwsCodeStar32Svg } from './Arch_AWS-CodeStar_32.svg';
+export { ReactComponent as archAwsCommandLineInterface32Svg } from './Arch_AWS-Command-Line-Interface_32.svg';
+export { ReactComponent as archAwsToolsAndSdKs32Svg } from './Arch_AWS-Tools-and-SDKs_32.svg';
+export { ReactComponent as archAwsXRay32Svg } from './Arch_AWS-X-Ray_32.svg';
+export { ReactComponent as archAmazonCorretto32Svg } from './Arch_Amazon-Corretto_32.svg';

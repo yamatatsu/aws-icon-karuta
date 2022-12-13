@@ -1,0 +1,1 @@
+export { ReactComponent as resAwsCloudDigitalInterface48LightSvg } from './Res_AWS-Cloud-Digital-Interface_48_Light.svg';

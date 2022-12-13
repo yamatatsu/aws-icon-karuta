@@ -1,0 +1,11 @@
+export { ReactComponent as archAmazonApiGateway48Svg } from './Arch_ Amazon-API-Gateway_48.svg';
+export { ReactComponent as archAwsAppSync48Svg } from './Arch_AWS-AppSync_48.svg';
+export { ReactComponent as archAwsConsoleMobileApplication48Svg } from './Arch_AWS-Console-Mobile-Application _48.svg';
+export { ReactComponent as archAwsExpressWorkflows48Svg } from './Arch_AWS-Express-Workflows_48.svg';
+export { ReactComponent as archAwsStepFunctions48Svg } from './Arch_AWS-Step-Functions_48.svg';
+export { ReactComponent as archAmazonAppFlow48Svg } from './Arch_Amazon-AppFlow_48.svg';
+export { ReactComponent as archAmazonEventBridge48Svg } from './Arch_Amazon-EventBridge_48.svg';
+export { ReactComponent as archAmazonMq48Svg } from './Arch_Amazon-MQ_48.svg';
+export { ReactComponent as archAmazonManagedWorkflowsForApacheAirflow48Svg } from './Arch_Amazon-Managed-Workflows-for-Apache-Airflow_48.svg';
+export { ReactComponent as archAmazonSimpleNotificationService48Svg } from './Arch_Amazon-Simple-Notification-Service_48.svg';
+export { ReactComponent as archAmazonSimpleQueueService48Svg } from './Arch_Amazon-Simple-Queue-Service_48.svg';

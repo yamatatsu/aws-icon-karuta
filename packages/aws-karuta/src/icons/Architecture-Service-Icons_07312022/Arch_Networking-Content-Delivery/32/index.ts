@@ -1,0 +1,15 @@
+export { ReactComponent as archAwsAppMesh32Svg } from './Arch_AWS-App-Mesh_32.svg';
+export { ReactComponent as archAwsClientVpn32Svg } from './Arch_AWS-Client-VPN_32.svg';
+export { ReactComponent as archAwsCloudMap32Svg } from './Arch_AWS-Cloud-Map_32.svg';
+export { ReactComponent as archAwsCloudWan32Svg } from './Arch_AWS-Cloud-WAN_32.svg';
+export { ReactComponent as archAwsDirectConnect32Svg } from './Arch_AWS-Direct-Connect_32.svg';
+export { ReactComponent as archAwsGlobalAccelerator32Svg } from './Arch_AWS-Global-Accelerator_32.svg';
+export { ReactComponent as archAwsPrivate5G32Svg } from './Arch_AWS-Private-5G_32.svg';
+export { ReactComponent as archAwsPrivateLink32Svg } from './Arch_AWS-PrivateLink_32.svg';
+export { ReactComponent as archAwsSiteToSiteVpn32Svg } from './Arch_AWS-Site-to-Site-VPN_32.svg';
+export { ReactComponent as archAwsTransitGateway32Svg } from './Arch_AWS-Transit-Gateway_32.svg';
+export { ReactComponent as archAmazonCloudDirectory32Svg } from './Arch_Amazon-Cloud-Directory_32.svg';
+export { ReactComponent as archAmazonCloudFront32Svg } from './Arch_Amazon-CloudFront_32.svg';
+export { ReactComponent as archAmazonRoute5332Svg } from './Arch_Amazon-Route-53_32.svg';
+export { ReactComponent as archAmazonVirtualPrivateCloud32Svg } from './Arch_Amazon-Virtual-Private-Cloud_32.svg';
+export { ReactComponent as archElasticLoadBalancing32Svg } from './Arch_Elastic-Load-Balancing_32.svg';

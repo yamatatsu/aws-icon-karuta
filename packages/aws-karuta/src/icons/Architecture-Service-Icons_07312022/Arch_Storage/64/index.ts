@@ -1,0 +1,17 @@
+export { ReactComponent as archAwsBackup64Svg } from './Arch_AWS-Backup_64.svg';
+export { ReactComponent as archAwsSnowballEdge64Svg } from './Arch_AWS-Snowball-Edge_64.svg';
+export { ReactComponent as archAwsSnowball64Svg } from './Arch_AWS-Snowball_64.svg';
+export { ReactComponent as archAwsSnowcone64Svg } from './Arch_AWS-Snowcone_64.svg';
+export { ReactComponent as archAwsSnowmobile64Svg } from './Arch_AWS-Snowmobile_64.svg';
+export { ReactComponent as archAwsStorageGateway64Svg } from './Arch_AWS-Storage-Gateway_64.svg';
+export { ReactComponent as archAmazonEfs64Svg } from './Arch_Amazon-EFS_64.svg';
+export { ReactComponent as archAmazonElasticBlockStore64Svg } from './Arch_Amazon-Elastic-Block-Store_64.svg';
+export { ReactComponent as archAmazonFsxForLustre64Svg } from './Arch_Amazon-FSx-for-Lustre_64.svg';
+export { ReactComponent as archAmazonFsxForNetAppOntap64Svg } from './Arch_Amazon-FSx-for-NetApp-ONTAP_64.svg';
+export { ReactComponent as archAmazonFsxForOpenZfs64Svg } from './Arch_Amazon-FSx-for-OpenZFS_64.svg';
+export { ReactComponent as archAmazonFsxForWfs64Svg } from './Arch_Amazon-FSx-for-WFS_64.svg';
+export { ReactComponent as archAmazonFsx64Svg } from './Arch_Amazon-FSx_64.svg';
+export { ReactComponent as archAmazonS3OnOutposts64Svg } from './Arch_Amazon-S3-on-Outposts_64.svg';
+export { ReactComponent as archAmazonSimpleStorageServiceGlacier64Svg } from './Arch_Amazon-Simple-Storage-Service-Glacier_64.svg';
+export { ReactComponent as archAmazonSimpleStorageService64Svg } from './Arch_Amazon-Simple-Storage-Service_64.svg';
+export { ReactComponent as archCloudEndureDisasterRecovery64Svg } from './Arch_CloudEndure-Disaster-Recovery_64.svg';

@@ -1,0 +1,17 @@
+export { ReactComponent as archAwsBackup32Svg } from './Arch_AWS-Backup_32.svg';
+export { ReactComponent as archAwsSnowballEdge32Svg } from './Arch_AWS-Snowball-Edge_32.svg';
+export { ReactComponent as archAwsSnowball32Svg } from './Arch_AWS-Snowball_32.svg';
+export { ReactComponent as archAwsSnowcone32Svg } from './Arch_AWS-Snowcone_32.svg';
+export { ReactComponent as archAwsSnowmobile32Svg } from './Arch_AWS-Snowmobile_32.svg';
+export { ReactComponent as archAwsStorageGateway32Svg } from './Arch_AWS-Storage-Gateway_32.svg';
+export { ReactComponent as archAmazonEfs32Svg } from './Arch_Amazon-EFS_32.svg';
+export { ReactComponent as archAmazonElasticBlockStore32Svg } from './Arch_Amazon-Elastic-Block-Store_32.svg';
+export { ReactComponent as archAmazonFsxForLustre32Svg } from './Arch_Amazon-FSx-for-Lustre_32.svg';
+export { ReactComponent as archAmazonFsxForNetAppOntap32Svg } from './Arch_Amazon-FSx-for-NetApp-ONTAP_32.svg';
+export { ReactComponent as archAmazonFsxForOpenZfs32Svg } from './Arch_Amazon-FSx-for-OpenZFS_32.svg';
+export { ReactComponent as archAmazonFsxForWfs32Svg } from './Arch_Amazon-FSx-for-WFS_32.svg';
+export { ReactComponent as archAmazonFsx32Svg } from './Arch_Amazon-FSx_32.svg';
+export { ReactComponent as archAmazonS3OnOutposts32Svg } from './Arch_Amazon-S3-on-Outposts_32.svg';
+export { ReactComponent as archAmazonSimpleStorageServiceGlacier32Svg } from './Arch_Amazon-Simple-Storage-Service-Glacier_32.svg';
+export { ReactComponent as archAmazonSimpleStorageService32Svg } from './Arch_Amazon-Simple-Storage-Service_32.svg';
+export { ReactComponent as archCloudEndureDisasterRecovery32Svg } from './Arch_CloudEndure-Disaster-Recovery_32.svg';

@@ -1,0 +1,13 @@
+export { ReactComponent as resAmazonBraketChandelier48LightSvg } from './Res_Amazon-Braket_Chandelier_48_Light.svg';
+export { ReactComponent as resAmazonBraketChip48LightSvg } from './Res_Amazon-Braket_Chip_48_Light.svg';
+export { ReactComponent as resAmazonBraketEmbeddedSimulator48LightSvg } from './Res_Amazon-Braket_Embedded-Simulator_48_Light.svg';
+export { ReactComponent as resAmazonBraketManagedSimulator48LightSvg } from './Res_Amazon-Braket_Managed-Simulator_48_Light.svg';
+export { ReactComponent as resAmazonBraketNoiseSimulator48LightSvg } from './Res_Amazon-Braket_Noise-Simulator_48_Light.svg';
+export { ReactComponent as resAmazonBraketQpu48LightSvg } from './Res_Amazon-Braket_QPU_48_Light.svg';
+export { ReactComponent as resAmazonBraketSimulator148LightSvg } from './Res_Amazon-Braket_Simulator-1_48_Light.svg';
+export { ReactComponent as resAmazonBraketSimulator248LightSvg } from './Res_Amazon-Braket_Simulator-2_48_Light.svg';
+export { ReactComponent as resAmazonBraketSimulator348LightSvg } from './Res_Amazon-Braket_Simulator-3_48_Light.svg';
+export { ReactComponent as resAmazonBraketSimulator448LightSvg } from './Res_Amazon-Braket_Simulator-4_48_Light.svg';
+export { ReactComponent as resAmazonBraketSimulator48LightSvg } from './Res_Amazon-Braket_Simulator_48_Light.svg';
+export { ReactComponent as resAmazonBraketStateVector48LightSvg } from './Res_Amazon-Braket_State-Vector_48_Light.svg';
+export { ReactComponent as resAmazonBraketTensorNetwork48LightSvg } from './Res_Amazon-Braket_Tensor-Network_48_Light.svg';

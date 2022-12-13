@@ -1,0 +1,1 @@
+export { ReactComponent as resAmazonManagedBlockchainBlockchain48LightSvg } from './Res_Amazon-Managed-Blockchain_Blockchain_48_Light.svg';

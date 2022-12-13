@@ -1,0 +1,2 @@
+export { ReactComponent as archAmazonManagedBlockchain16Svg } from './Arch_Amazon-Managed-Blockchain_16.svg';
+export { ReactComponent as archAmazonQuantumLedgerDatabase16Svg } from './Arch_Amazon-Quantum-Ledger-Database_16.svg';
