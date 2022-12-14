@@ -11,28 +11,6 @@ export default function App(props: Props) {
             <Link to="/">Icon Karuta</Link>
           </h3>
         </div>
-
-        <div className="collapsible">
-          <input id="collapsible1" type="checkbox" name="collapsible1" />
-          <label htmlFor="collapsible1">
-            <div className="bar1"></div>
-            <div className="bar2"></div>
-            <div className="bar3"></div>
-          </label>
-          <div className="collapsible-body">
-            <ul className="inline">
-              <li>
-                <a href="#">Documentation</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Github</a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </nav>
       <div className="container" style={{ marginTop: "5em" }}>
         {props.children}
