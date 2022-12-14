@@ -14,12 +14,10 @@ function createIndexFiles(tree) {
     if (Array.isArray(subTree)) {
       createFile(
         _path,
-        subTree
-          .filter((fileName) => fileName !== ".DS_Store")
-          .map((fileName) => {
-            const moduleName = camelCase(fileName.replace(/\&/g, ""));
-            return `export { default as ${moduleName} } from './${fileName}';`;
-          })
+        subTree.map((fileName) => {
+          const moduleName = camelCase(fileName.replace(/\&/g, ""));
+          return `export { default as ${moduleName} } from './${fileName}';`;
+        })
       );
     } else {
       createFile(
