@@ -12,16 +12,28 @@ createIndexFiles(findSVG(iconsDir));
 function createIndexFiles(tree) {
   return Object.entries(tree).forEach(([_path, subTree]) => {
     if (Array.isArray(subTree)) {
-      createFile(
-        _path,
-        subTree.map((fileName) => {
-          const moduleName = camelCase(fileName.replace(/\&/g, ""));
-          return `export { default as ${moduleName} } from './${fileName}';`;
-        })
+      const { importLines, exportLines } = subTree.reduce(
+        ({ importLines, exportLines }, fileName) => {
+          const id = camelCase(fileName.replace(/\&/g, ""));
+          const name = getIconName(fileName);
+          return {
+            importLines: importLines.concat(
+              `import _${id} from './${fileName}';\n`
+            ),
+            exportLines: exportLines.concat(
+              `export const ${id} = { id: "${id}", name: "${name}", icon: _${id} };\n`
+            ),
+          };
+        },
+        { importLines: [], exportLines: [] }
+      );
+      fs.writeFileSync(
+        `${_path}/index.ts`,
+        `${importLines.join("")}\n${exportLines.join("")}`
       );
     } else {
-      createFile(
-        _path,
+      fs.writeFileSync(
+        `${_path}/index.ts`,
         Object.keys(subTree)
           .map((_path) => _path.match(/\/([^/]+)$/)[1])
           .map((dirName) => {
@@ -31,14 +43,26 @@ function createIndexFiles(tree) {
 
             return `export * as ${moduleName} from './${dirName}';`;
           })
+          .join("\n")
       );
       createIndexFiles(subTree);
     }
   });
 }
 
-function createFile(_path, lines) {
-  fs.writeFileSync(`${_path}/index.ts`, lines.join("\n"));
+function getIconName(fileName) {
+  if (fileName.startsWith("Arch_")) {
+    return fileName.match(/^Arch_(.*)_\d\d\.svg$/)[1].replaceAll("-", " ");
+  } else if (fileName.startsWith("Arch-Category_")) {
+    return fileName
+      .match(/^Arch-Category_(.*)_\d\d\.svg$/)[1]
+      .replaceAll("-", " ");
+  } else {
+    return fileName
+      .match(/^Res_(.*)_\d\d_(Dark|Light)\.svg$/)[1]
+      .replaceAll("_", " | ")
+      .replaceAll("-", " ");
+  }
 }
 
 function findSVG(dirPath) {
