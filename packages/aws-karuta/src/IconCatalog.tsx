@@ -5,9 +5,9 @@ type Props = {
 export default function IconCatalog(props: Props) {
   return (
     <div className="paper">
-      <div className="row">
+      <div className="row flex-edges" style={{ rowGap: 80 }}>
         {Object.entries(props.icons).map(([name, icon]) => (
-          <div popover-top={icon.name} style={{ margin: "1.5em 0.5em" }}>
+          <div popover-top={icon.name} style={{ margin: 0 }}>
             <img
               key={icon.id}
               src={icon.icon}
