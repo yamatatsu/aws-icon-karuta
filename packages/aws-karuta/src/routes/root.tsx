@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 export default function Root() {
   return (
     <>
-      <div className="container">
-        <h1>Icon Karuta</h1>
+      <div className="paper">
         <ul>
           <li>Icon catalog</li>
           <ul>

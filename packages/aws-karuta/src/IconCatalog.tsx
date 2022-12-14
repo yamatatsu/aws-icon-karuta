@@ -4,11 +4,10 @@ type Props = {
 };
 export default function IconCatalog(props: Props) {
   return (
-    <div className="paper container">
-      <h2>{props.title}</h2>
+    <div className="paper">
       <div className="row">
         {Object.entries(props.icons).map(([name, icon]) => (
-          <div popover-top={icon.name} style={{ margin: "2em 0.5em" }}>
+          <div popover-top={icon.name} style={{ margin: "1.5em 0.5em" }}>
             <img
               key={icon.id}
               src={icon.icon}
