@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import App from "./App";
-import Root from "./routes/root";
-import IconCatalog from "./IconCatalog";
-import ErrorPage from "./error-page";
+import Root from "./pages/Root";
+import IconCatalog from "./pages/IconCatalog";
+import ErrorPage from "./pages/ErrorPage";
 import * as icons from "./icons";
 import "./index.css";
 
