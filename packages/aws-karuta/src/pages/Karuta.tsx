@@ -2,7 +2,7 @@ type Props = {
   title: string;
   icons: Record<string, { id: string; name: string; icon: string }>;
 };
-export default function IconCatalog(props: Props) {
+export default function Karuta(props: Props) {
   return (
     <div className="paper">
       <div className="row flex-edges" style={{ rowGap: 80 }}>

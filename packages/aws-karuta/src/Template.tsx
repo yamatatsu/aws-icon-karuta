@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 type Props = { children?: React.ReactNode };
-export default function App(props: Props) {
+export default function Template(props: Props) {
   return (
     <>
       <nav className="border fixed split-nav">
