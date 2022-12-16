@@ -7,7 +7,8 @@
     "dev": "npm run -w aws-karuta dev",
     "build": "npm run -w aws-karuta build",
     "preview": "npm run -w aws-karuta preview",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run -w packages/aws-karuta test run",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "MIT",
@@ -15,6 +16,7 @@
     "packages/*"
   ],
   "devDependencies": {
+    "husky": "^8.0.2",
     "prettier": "^2.8.1"
   }
 }
