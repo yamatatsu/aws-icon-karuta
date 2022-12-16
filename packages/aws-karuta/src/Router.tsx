@@ -52,7 +52,11 @@ const router = createBrowserRouter(
           <Outlet />
         </Template>
       ),
-      errorElement: <ErrorPage />,
+      errorElement: (
+        <Template>
+          <ErrorPage />
+        </Template>
+      ),
       children: [
         { path: "/", element: <Root /> },
         ...karutaNodes,
