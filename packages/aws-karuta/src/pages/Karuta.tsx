@@ -28,7 +28,7 @@ export default function Karuta(props: Props) {
           </div>
         )}
       </div>
-      <div className="row flex-edges" style={{ columnGap: 8, rowGap: 16 }}>
+      <div className="row flex-center" style={{ columnGap: 8, rowGap: 16 }}>
         {icons.map((icon) => (
           <div key={icon.id} style={{ position: "relative", margin: 0 }}>
             <img
