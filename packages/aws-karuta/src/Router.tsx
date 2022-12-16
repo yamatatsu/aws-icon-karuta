@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Template from "./Template";
 import Root from "./pages/Root";
-import Karuta from "./pages/Karuta";
+import Karuta, { randomSort } from "./pages/Karuta";
 import Catalog from "./pages/Catalog";
 import ErrorPage from "./pages/ErrorPage";
 import * as icons from "./icons";
@@ -21,7 +21,9 @@ const karutaNodes = (
   ] as const
 ).map(([path, title, icons]) => ({
   path,
-  element: <Karuta title={title} icons={icons} />,
+  element: (
+    <Karuta title={title} initialIcons={icons} randomSort={randomSort} />
+  ),
 }));
 
 const catalogNodes = (
