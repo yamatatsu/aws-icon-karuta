@@ -5,7 +5,6 @@ type InitialIcons = Record<string, IconSource>;
 type Icon = IconSource & { removed?: true };
 
 type Props = {
-  title: string;
   initialIcons: InitialIcons;
   randomSort: <T>(arr: T[]) => T[];
 };
@@ -18,13 +17,22 @@ export default function Karuta(props: Props) {
   return (
     <>
       <div className="row" style={{ alignItems: "end", gap: "1em" }}>
-        <div style={{ fontSize: "1em" }}>Click</div>
-        <div style={{ fontSize: "1.5em" }}>{correctIcon.name}</div>
+        {correctIcon ? (
+          <div className="row" style={{ alignItems: "end", gap: "1em" }}>
+            <div style={{ fontSize: "1em" }}>Click</div>
+            <div style={{ fontSize: "1.5em" }}>{correctIcon.name}</div>
+          </div>
+        ) : (
+          <div className="row" style={{ justifyContent: "center" }}>
+            <div style={{ fontSize: "1.5em" }}>🎉🎉🎉</div>
+          </div>
+        )}
       </div>
       <div className="row flex-edges" style={{ columnGap: 8, rowGap: 16 }}>
         {icons.map((icon) => (
           <div key={icon.id} style={{ position: "relative", margin: 0 }}>
             <img
+              data-testid={icon.id}
               onClick={() => handleClickIcon(icon.id)}
               src={icon.icon}
               className="no-border"
@@ -33,6 +41,7 @@ export default function Karuta(props: Props) {
             />
             {icon.removed && (
               <div
+                data-testid={`${icon.id}_mask`}
                 style={{
                   width: "100%",
                   height: "100%",

@@ -144,3 +144,9 @@ export const resourceIcons = {
   ...Resources.resStorage.res48Dark,
   ...Resources.resLoT.res48Dark,
 };
+
+
+export const testIcons = {
+  [service64Icons.archAlexaForBusiness64Svg.id]: service64Icons.archAlexaForBusiness64Svg,
+  [service64Icons.archAmazonApiGateway64Svg.id]: service64Icons.archAmazonApiGateway64Svg,
+}
