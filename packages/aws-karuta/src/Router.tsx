@@ -43,22 +43,25 @@ const catalogNodes = (
   element: <Catalog title={title} icons={icons} />,
 }));
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      <Template>
-        <Outlet />
-      </Template>
-    ),
-    errorElement: <ErrorPage />,
-    children: [
-      { path: "/", element: <Root /> },
-      ...karutaNodes,
-      ...catalogNodes,
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: (
+        <Template>
+          <Outlet />
+        </Template>
+      ),
+      errorElement: <ErrorPage />,
+      children: [
+        { path: "/", element: <Root /> },
+        ...karutaNodes,
+        ...catalogNodes,
+      ],
+    },
+  ],
+  { basename: "/aws-karuta" }
+);
 
 export default function Router() {
   return <RouterProvider router={router} />;
