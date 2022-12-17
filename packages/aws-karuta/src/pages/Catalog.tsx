@@ -4,9 +4,13 @@ type Props = {
 };
 export default function Catalog(props: Props) {
   return (
-    <div className="paper">
-      <div className="row flex-edges" style={{ rowGap: 80 }}>
-        {Object.entries(props.icons).map(([name, icon]) => (
+    <div className="paper" style={{ margin: 0 }}>
+      <h2 style={{ margin: 0 }}>{props.title}</h2>
+      <div
+        className="row flex-center"
+        style={{ marginTop: 80, rowGap: 80, columnGap: 8 }}
+      >
+        {Object.values(props.icons).map((icon) => (
           <div popover-top={icon.name} style={{ margin: 0 }}>
             <img
               key={icon.id}

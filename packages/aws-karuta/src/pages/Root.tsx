@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Root() {
   return (
-    <div className="paper">
+    <div className="paper" style={{ margin: 0 }}>
       <ul>
         <li>Karuta</li>
         <ul>

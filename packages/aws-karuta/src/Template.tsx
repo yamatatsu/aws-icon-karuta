@@ -6,7 +6,14 @@ export default function Template(props: Props) {
   return (
     <>
       <NavHeader />
-      <div className="container" style={{ marginTop: "5em" }}>
+      <div
+        className="container"
+        style={{
+          height: "100svh",
+          paddingTop: "5em",
+          paddingBottom: "1em",
+        }}
+      >
         {props.children}
       </div>
     </>

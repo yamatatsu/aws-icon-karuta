@@ -1,4 +1,5 @@
 import { useState, useReducer } from "react";
+import { _16 } from "../icons/Architecture-Service-Icons_07312022/Arch_Blockchain";
 
 type IconSource = { id: string; name: string; icon: string };
 type InitialIcons = Record<string, IconSource>;
@@ -15,30 +16,48 @@ export default function Karuta(props: Props) {
   );
 
   return (
-    <>
-      <div className="row" style={{ alignItems: "end", gap: "1em" }}>
-        {correctIcon ? (
-          <div className="row" style={{ alignItems: "end", gap: "1em" }}>
-            <div style={{ fontSize: "1em" }}>Click</div>
-            <div style={{ fontSize: "1.5em" }}>{correctIcon.name}</div>
-          </div>
-        ) : (
-          <div className="row" style={{ justifyContent: "center" }}>
-            <div style={{ fontSize: "1.5em" }}>🎉🎉🎉</div>
-          </div>
-        )}
-      </div>
-      <div className="row flex-center" style={{ columnGap: 8, rowGap: 16 }}>
+    <div
+      className="paper"
+      style={{
+        margin: 0,
+        padding: "1em 0.5em",
+        display: "flex",
+        flexDirection: "column",
+        height: "100%",
+      }}
+    >
+      {correctIcon ? (
+        <div className="row" style={{ alignItems: "end", gap: "1em" }}>
+          <div style={{ fontSize: "1em" }}>Click</div>
+          <div style={{ fontSize: "1.5em" }}>{correctIcon.name}</div>
+        </div>
+      ) : (
+        <div className="row" style={{ justifyContent: "center" }}>
+          <div style={{ fontSize: "1.5em" }}>🎉🎉🎉</div>
+        </div>
+      )}
+      <div
+        className="row flex-center"
+        style={{
+          margin: 0,
+          columnGap: 8,
+          rowGap: 16,
+          overflow: "scroll",
+        }}
+      >
         {icons.map((icon) => (
           <div key={icon.id} style={{ position: "relative", margin: 0 }}>
-            <img
-              data-testid={icon.id}
-              onClick={() => handleClickIcon(icon.id)}
-              src={icon.icon}
-              className="no-border"
-              style={{ height: "4em" }}
-              alt={icon.name}
-            />
+            <div className="card" style={{ border: 0 }}>
+              <img
+                data-testid={icon.id}
+                onClick={() => handleClickIcon(icon.id)}
+                src={icon.icon}
+                className="no-border"
+                style={{ height: "4em" }}
+                alt={icon.name}
+              />
+            </div>
+
             {icon.removed && (
               <div
                 data-testid={`${icon.id}_mask`}
@@ -55,7 +74,7 @@ export default function Karuta(props: Props) {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
