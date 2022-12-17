@@ -11,7 +11,7 @@ export default function Catalog(props: Props) {
         style={{ marginTop: 80, rowGap: 80, columnGap: 8 }}
       >
         {Object.values(props.icons).map((icon) => (
-          <div popover-top={icon.name} style={{ margin: 0 }}>
+          <div key={icon.id} popover-top={icon.name} style={{ margin: 0 }}>
             <img
               key={icon.id}
               src={icon.icon}
