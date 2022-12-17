@@ -18,7 +18,7 @@ export const service16Icons = {
   ...Services.archEndUserComputing._16,
   ...Services.archFrontEndWebMobile._16,
   ...Services.archGameTech._16,
-  // This is not service
+  // This is not AWS service
   // ...Services.archGeneralIcons._16,
   ...Services.archInternetOfThings._16,
   ...Services.archMachineLearning._16,
@@ -47,7 +47,7 @@ export const service32Icons = {
   ...Services.archEndUserComputing._32,
   ...Services.archFrontEndWebMobile._32,
   ...Services.archGameTech._32,
-  // This is not service
+  // This is not AWS service
   // ...Services.archGeneralIcons._32,
   ...Services.archInternetOfThings._32,
   ...Services.archMachineLearning._32,
@@ -76,7 +76,7 @@ export const service48Icons = {
   ...Services.archEndUserComputing._48,
   ...Services.archFrontEndWebMobile._48,
   ...Services.archGameTech._48,
-  // This is not service
+  // This is not AWS service
   // ...Services.archGeneralIcons._48,
   ...Services.archInternetOfThings._48,
   ...Services.archMachineLearning._48,
@@ -105,7 +105,7 @@ export const service64Icons = {
   ...Services.archEndUserComputing._64,
   ...Services.archFrontEndWebMobile._64,
   ...Services.archGameTech._64,
-  // This is not service
+  // This is not AWS service
   // ...Services.archGeneralIcons._64,
   ...Services.archInternetOfThings._64,
   ...Services.archMachineLearning._64,
@@ -136,7 +136,8 @@ export const resourceIcons = {
   ...Resources.resDatabase.res48Dark,
   ...Resources.resDeveloperTools.res48Dark,
   ...Resources.resFrontEndWebMobile.res48Dark,
-  ...Resources.resGeneralIcons.res48Dark,
+  // This is not AWS Resource
+  // ...Resources.resGeneralIcons.res48Dark,
   ...Resources.resMachineLearning.res48Dark,
   ...Resources.resManagementGovernance.res48Dark,
   ...Resources.resMediaServices.res48Dark,
