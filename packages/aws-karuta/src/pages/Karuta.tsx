@@ -33,7 +33,9 @@ export default function Karuta(props: Props) {
         </div>
       ) : (
         <div className="row" style={{ justifyContent: "center" }}>
-          <div style={{ fontSize: "1.5em" }}>🎉🎉🎉</div>
+          <div data-testid="completion" style={{ fontSize: "1.5em" }}>
+            🎉🎉🎉
+          </div>
         </div>
       )}
       <div

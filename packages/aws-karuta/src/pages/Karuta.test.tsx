@@ -1,5 +1,5 @@
 import "@testing-library/jest-dom";
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import Karuta from "./Karuta";
 
 const dummySort: <T>(a: T[]) => T[] = (a) => a;
@@ -16,42 +16,40 @@ test("initial view", async () => {
 
   expect(screen.queryByTestId("icon1_mask")).not.toBeInTheDocument();
   expect(screen.queryByTestId("icon2_mask")).not.toBeInTheDocument();
+
+  expect(screen.queryByTestId("completion")).not.toBeInTheDocument();
 });
 
 test("not masked when incorrect", async () => {
   render(<Karuta initialIcons={initialIcons} randomSort={dummySort} />);
 
-  screen.getByTestId("icon2").click();
+  fireEvent.click(screen.getByTestId("icon2"));
 
-  await waitFor(() => {
-    expect(screen.queryByTestId("icon1_mask")).not.toBeInTheDocument();
-    expect(screen.queryByTestId("icon2_mask")).not.toBeInTheDocument();
-  });
+  expect(screen.queryByTestId("icon1_mask")).not.toBeInTheDocument();
+  expect(screen.queryByTestId("icon2_mask")).not.toBeInTheDocument();
 });
 
 test("masked when correct", async () => {
   render(<Karuta initialIcons={initialIcons} randomSort={dummySort} />);
 
-  screen.getByTestId("icon1").click();
+  fireEvent.click(screen.getByTestId("icon1"));
 
-  await waitFor(() => {
-    expect(screen.queryByTestId("icon1_mask")).toBeVisible();
-    expect(screen.queryByTestId("icon2_mask")).not.toBeInTheDocument();
-  });
+  expect(screen.queryByTestId("icon1_mask")).toBeVisible();
+  expect(screen.queryByTestId("icon2_mask")).not.toBeInTheDocument();
 });
 
 test("completion", async () => {
   render(<Karuta initialIcons={initialIcons} randomSort={dummySort} />);
 
-  screen.getByTestId("icon1").click();
-  await waitFor(() => {
-    expect(screen.queryByTestId("icon1_mask")).toBeVisible();
-    expect(screen.queryByTestId("icon2_mask")).not.toBeInTheDocument();
-  });
+  fireEvent.click(screen.getByTestId("icon1"));
 
-  screen.getByTestId("icon2").click();
-  await waitFor(() => {
-    expect(screen.queryByTestId("icon1_mask")).toBeVisible();
-    expect(screen.queryByTestId("icon2_mask")).toBeVisible();
-  });
+  expect(screen.queryByTestId("icon1_mask")).toBeVisible();
+  expect(screen.queryByTestId("icon2_mask")).not.toBeInTheDocument();
+  expect(screen.queryByTestId("completion")).not.toBeInTheDocument();
+
+  fireEvent.click(screen.getByTestId("icon2"));
+
+  expect(screen.queryByTestId("icon1_mask")).toBeVisible();
+  expect(screen.queryByTestId("icon2_mask")).toBeVisible();
+  expect(screen.queryByTestId("completion")).toBeVisible();
 });
