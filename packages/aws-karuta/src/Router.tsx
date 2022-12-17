@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Template from "./Template";
-import Root from "./pages/Root";
+import Home from "./pages/Home";
 import Karuta, { randomSort } from "./pages/Karuta";
 import Catalog from "./pages/Catalog";
 import ErrorPage from "./pages/ErrorPage";
@@ -57,7 +57,7 @@ const router = createBrowserRouter(
         </Template>
       ),
       children: [
-        { path: "/", element: <Root /> },
+        { path: "/", element: <Home /> },
         ...karutaNodes,
         ...catalogNodes,
       ],

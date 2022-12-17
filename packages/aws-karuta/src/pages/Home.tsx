@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Root() {
+export default function Home() {
   return (
     <div className="paper" style={{ margin: 0 }}>
       <ul>
