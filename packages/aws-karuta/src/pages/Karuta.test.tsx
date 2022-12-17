@@ -9,7 +9,7 @@ const initialIcons = {
 };
 
 test("initial view", async () => {
-  render(<Karuta initialIcons={initialIcons} randomSort={dummySort} />);
+  render(<Karuta initialIconDict={initialIcons} randomSort={dummySort} />);
 
   expect(screen.queryByTestId("icon1")).toBeVisible();
   expect(screen.queryByTestId("icon2")).toBeVisible();
@@ -21,16 +21,17 @@ test("initial view", async () => {
 });
 
 test("not masked when incorrect", async () => {
-  render(<Karuta initialIcons={initialIcons} randomSort={dummySort} />);
+  render(<Karuta initialIconDict={initialIcons} randomSort={dummySort} />);
 
   fireEvent.click(screen.getByTestId("icon2"));
 
   expect(screen.queryByTestId("icon1_mask")).not.toBeInTheDocument();
   expect(screen.queryByTestId("icon2_mask")).not.toBeInTheDocument();
+  expect(screen.queryByTestId("icon2")).toHaveClass("shake");
 });
 
 test("masked when correct", async () => {
-  render(<Karuta initialIcons={initialIcons} randomSort={dummySort} />);
+  render(<Karuta initialIconDict={initialIcons} randomSort={dummySort} />);
 
   fireEvent.click(screen.getByTestId("icon1"));
 
@@ -39,7 +40,7 @@ test("masked when correct", async () => {
 });
 
 test("completion", async () => {
-  render(<Karuta initialIcons={initialIcons} randomSort={dummySort} />);
+  render(<Karuta initialIconDict={initialIcons} randomSort={dummySort} />);
 
   fireEvent.click(screen.getByTestId("icon1"));
 

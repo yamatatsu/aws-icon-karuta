@@ -1,17 +1,17 @@
-import { useState, useReducer } from "react";
+import { useReducer } from "react";
 import { _16 } from "../icons/Architecture-Service-Icons_07312022/Arch_Blockchain";
 
 type IconSource = { id: string; name: string; icon: string };
-type InitialIcons = Record<string, IconSource>;
+type InitialIconDict = Record<string, IconSource>;
 type Icon = IconSource & { removed?: true };
 
 type Props = {
-  initialIcons: InitialIcons;
+  initialIconDict: InitialIconDict;
   randomSort: <T>(arr: T[]) => T[];
 };
 export default function Karuta(props: Props) {
-  const { icons, correctIcon, handleClickIcon } = useGame(
-    props.initialIcons,
+  const { icons, correctIcon, incorrectClick, handleClickIcon } = useGame(
+    props.initialIconDict,
     props.randomSort
   );
 
@@ -49,10 +49,15 @@ export default function Karuta(props: Props) {
       >
         {icons.map((icon) => (
           <div key={icon.id} style={{ position: "relative", margin: 0 }}>
-            <div className="card" style={{ border: 0 }}>
+            <div
+              data-testid={icon.id}
+              onClick={() => handleClickIcon(icon.id)}
+              className={`card ${
+                icon.id === incorrectClick?.id ? "shake" : ""
+              }`}
+              style={{ border: 0 }}
+            >
               <img
-                data-testid={icon.id}
-                onClick={() => handleClickIcon(icon.id)}
                 src={icon.icon}
                 className="no-border"
                 style={{ height: "4em" }}
@@ -80,34 +85,57 @@ export default function Karuta(props: Props) {
   );
 }
 
-function useGame(initialIcons: InitialIcons, randomSort: <T>(arr: T[]) => T[]) {
-  const [icons, removeIcon] = useReducer(
-    (icons: Icon[], id: string) =>
-      icons.reduce<Icon[]>(
-        (acc, icon) => [
-          ...acc,
-          icon.id === id ? { ...icon, removed: true } : icon,
-        ],
-        []
-      ),
-    Object.values(initialIcons)
+type State = {
+  icons: Icon[];
+  questions: Icon[];
+  incorrectClick?: { id: string };
+};
+
+const reducer = (state: State, id: string): State => {
+  const { icons, questions } = state;
+  const [correctIcon] = questions;
+
+  if (id === correctIcon.id) {
+    return {
+      icons: setIconState(state.icons, id, { removed: true }),
+      questions: questions.slice(1),
+    };
+  } else {
+    return {
+      ...state,
+      incorrectClick: { id },
+    };
+  }
+};
+
+function useGame(
+  initialIconDict: InitialIconDict,
+  randomSort: <T>(arr: T[]) => T[]
+) {
+  const initialIcons = Object.values(initialIconDict);
+
+  const [state, handleClickIcon] = useReducer(reducer, {
+    icons: initialIcons,
+    questions: randomSort(initialIcons),
+  });
+
+  const { icons, questions, incorrectClick } = state;
+  const [correctIcon] = questions;
+
+  return { icons, correctIcon, incorrectClick, handleClickIcon };
+}
+
+/**
+ * change icon state immutably
+ */
+function setIconState(icons: Icon[], id: string, newIconState: Partial<Icon>) {
+  return icons.reduce<Icon[]>(
+    (acc, icon) => [
+      ...acc,
+      icon.id === id ? { ...icon, ...newIconState } : icon,
+    ],
+    []
   );
-
-  const [[correctIcon], next] = useReducer(
-    (icons: Icon[]) => icons.slice(1),
-    randomSort(Object.values(initialIcons))
-  );
-
-  const handleClickIcon = (id: string) => {
-    if (id === correctIcon.id) {
-      removeIcon(id);
-      next();
-    } else {
-      // TODO: something effect for incorrect click
-    }
-  };
-
-  return { icons, correctIcon, handleClickIcon };
 }
 
 export function randomSort<T>(arr: T[]): T[] {

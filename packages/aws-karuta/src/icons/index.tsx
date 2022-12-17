@@ -155,8 +155,3 @@ export const testIcons = {
   [service64Icons.archAmazonApiGateway64Svg.id]:
     service64Icons.archAmazonApiGateway64Svg,
 };
-
-console.log(Object.values(service16Icons).map((i) => i.name));
-console.log(Object.values(service32Icons).map((i) => i.name));
-console.log(Object.values(service48Icons).map((i) => i.name));
-console.log(Object.values(service64Icons).map((i) => i.name));

@@ -22,7 +22,7 @@ const karutaNodes = (
   ] as const
 ).map(([path, icons]) => ({
   path,
-  element: <Karuta initialIcons={icons} randomSort={randomSort} />,
+  element: <Karuta initialIconDict={icons} randomSort={randomSort} />,
 }));
 
 const catalogNodes = (
