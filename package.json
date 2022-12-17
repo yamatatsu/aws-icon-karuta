@@ -7,7 +7,7 @@
     "dev": "npm run -w aws-karuta dev",
     "build": "npm run -w aws-karuta build",
     "preview": "npm run -w aws-karuta preview",
-    "test": "npm run -w packages/aws-karuta test run",
+    "test": "npm run -w aws-karuta test",
     "prepare": "husky install"
   },
   "author": "",
