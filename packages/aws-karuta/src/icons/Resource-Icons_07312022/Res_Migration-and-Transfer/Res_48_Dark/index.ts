@@ -11,15 +11,15 @@ import _resAwsTransferFamilyAwsFtps48DarkSvg from './Res_AWS-Transfer-Family_AWS
 import _resAwsTransferFamilyAwsFtp48DarkSvg from './Res_AWS-Transfer-Family_AWS-FTP_48_Dark.svg';
 import _resAwsTransferFamilyAwsSftp48DarkSvg from './Res_AWS-Transfer-Family_AWS-SFTP_48_Dark.svg';
 
-export const resAwsDatasyncAgent48DarkSvg = { id: "resAwsDatasyncAgent48DarkSvg", name: "AWS Datasync | Agent", icon: _resAwsDatasyncAgent48DarkSvg };
-export const resAwsMainframeModernizationAnalyzer48DarkSvg = { id: "resAwsMainframeModernizationAnalyzer48DarkSvg", name: "AWS Mainframe Modernization | Analyzer", icon: _resAwsMainframeModernizationAnalyzer48DarkSvg };
-export const resAwsMainframeModernizationCompiler48DarkSvg = { id: "resAwsMainframeModernizationCompiler48DarkSvg", name: "AWS Mainframe Modernization | Compiler", icon: _resAwsMainframeModernizationCompiler48DarkSvg };
-export const resAwsMainframeModernizationConverter48DarkSvg = { id: "resAwsMainframeModernizationConverter48DarkSvg", name: "AWS Mainframe Modernization | Converter", icon: _resAwsMainframeModernizationConverter48DarkSvg };
-export const resAwsMainframeModernizationDeveloper48DarkSvg = { id: "resAwsMainframeModernizationDeveloper48DarkSvg", name: "AWS Mainframe Modernization | Developer", icon: _resAwsMainframeModernizationDeveloper48DarkSvg };
-export const resAwsMainframeModernizationRuntime48DarkSvg = { id: "resAwsMainframeModernizationRuntime48DarkSvg", name: "AWS Mainframe Modernization | Runtime", icon: _resAwsMainframeModernizationRuntime48DarkSvg };
-export const resAwsMigrationHubRefactorSpacesApplications48DarkSvg = { id: "resAwsMigrationHubRefactorSpacesApplications48DarkSvg", name: "AWS Migration Hub | Refactor Spaces Applications", icon: _resAwsMigrationHubRefactorSpacesApplications48DarkSvg };
-export const resAwsMigrationHubRefactorSpacesEnvironments48DarkSvg = { id: "resAwsMigrationHubRefactorSpacesEnvironments48DarkSvg", name: "AWS Migration Hub | Refactor Spaces Environments", icon: _resAwsMigrationHubRefactorSpacesEnvironments48DarkSvg };
-export const resAwsMigrationHubRefactorSpacesServices48DarkSvg = { id: "resAwsMigrationHubRefactorSpacesServices48DarkSvg", name: "AWS Migration Hub | Refactor Spaces Services", icon: _resAwsMigrationHubRefactorSpacesServices48DarkSvg };
-export const resAwsTransferFamilyAwsFtps48DarkSvg = { id: "resAwsTransferFamilyAwsFtps48DarkSvg", name: "AWS Transfer Family | AWS FTPS", icon: _resAwsTransferFamilyAwsFtps48DarkSvg };
-export const resAwsTransferFamilyAwsFtp48DarkSvg = { id: "resAwsTransferFamilyAwsFtp48DarkSvg", name: "AWS Transfer Family | AWS FTP", icon: _resAwsTransferFamilyAwsFtp48DarkSvg };
-export const resAwsTransferFamilyAwsSftp48DarkSvg = { id: "resAwsTransferFamilyAwsSftp48DarkSvg", name: "AWS Transfer Family | AWS SFTP", icon: _resAwsTransferFamilyAwsSftp48DarkSvg };
+export const resAwsDatasyncAgent48DarkSvg = { id: "resAwsDatasyncAgent48DarkSvg", name: "AWS Datasync / Agent", icon: _resAwsDatasyncAgent48DarkSvg };
+export const resAwsMainframeModernizationAnalyzer48DarkSvg = { id: "resAwsMainframeModernizationAnalyzer48DarkSvg", name: "AWS Mainframe Modernization / Analyzer", icon: _resAwsMainframeModernizationAnalyzer48DarkSvg };
+export const resAwsMainframeModernizationCompiler48DarkSvg = { id: "resAwsMainframeModernizationCompiler48DarkSvg", name: "AWS Mainframe Modernization / Compiler", icon: _resAwsMainframeModernizationCompiler48DarkSvg };
+export const resAwsMainframeModernizationConverter48DarkSvg = { id: "resAwsMainframeModernizationConverter48DarkSvg", name: "AWS Mainframe Modernization / Converter", icon: _resAwsMainframeModernizationConverter48DarkSvg };
+export const resAwsMainframeModernizationDeveloper48DarkSvg = { id: "resAwsMainframeModernizationDeveloper48DarkSvg", name: "AWS Mainframe Modernization / Developer", icon: _resAwsMainframeModernizationDeveloper48DarkSvg };
+export const resAwsMainframeModernizationRuntime48DarkSvg = { id: "resAwsMainframeModernizationRuntime48DarkSvg", name: "AWS Mainframe Modernization / Runtime", icon: _resAwsMainframeModernizationRuntime48DarkSvg };
+export const resAwsMigrationHubRefactorSpacesApplications48DarkSvg = { id: "resAwsMigrationHubRefactorSpacesApplications48DarkSvg", name: "AWS Migration Hub / Refactor Spaces Applications", icon: _resAwsMigrationHubRefactorSpacesApplications48DarkSvg };
+export const resAwsMigrationHubRefactorSpacesEnvironments48DarkSvg = { id: "resAwsMigrationHubRefactorSpacesEnvironments48DarkSvg", name: "AWS Migration Hub / Refactor Spaces Environments", icon: _resAwsMigrationHubRefactorSpacesEnvironments48DarkSvg };
+export const resAwsMigrationHubRefactorSpacesServices48DarkSvg = { id: "resAwsMigrationHubRefactorSpacesServices48DarkSvg", name: "AWS Migration Hub / Refactor Spaces Services", icon: _resAwsMigrationHubRefactorSpacesServices48DarkSvg };
+export const resAwsTransferFamilyAwsFtps48DarkSvg = { id: "resAwsTransferFamilyAwsFtps48DarkSvg", name: "AWS Transfer Family / AWS FTPS", icon: _resAwsTransferFamilyAwsFtps48DarkSvg };
+export const resAwsTransferFamilyAwsFtp48DarkSvg = { id: "resAwsTransferFamilyAwsFtp48DarkSvg", name: "AWS Transfer Family / AWS FTP", icon: _resAwsTransferFamilyAwsFtp48DarkSvg };
+export const resAwsTransferFamilyAwsSftp48DarkSvg = { id: "resAwsTransferFamilyAwsSftp48DarkSvg", name: "AWS Transfer Family / AWS SFTP", icon: _resAwsTransferFamilyAwsSftp48DarkSvg };

@@ -60,7 +60,7 @@ function getIconName(fileName) {
   } else {
     return fileName
       .match(/^Res_(.*)_\d\d_(Dark|Light)\.svg$/)[1]
-      .replaceAll("_", " | ")
+      .replaceAll("_", " / ")
       .replaceAll("-", " ");
   }
 }

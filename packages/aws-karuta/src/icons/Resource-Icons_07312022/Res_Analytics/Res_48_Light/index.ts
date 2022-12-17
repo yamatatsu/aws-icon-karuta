@@ -13,15 +13,15 @@ import _resAmazonRedshiftMl48LightSvg from './Res_Amazon-Redshift_ML_48_Light.sv
 import _resAmazonRedshiftRa348LightSvg from './Res_Amazon-Redshift_RA3_48_Light.svg';
 
 export const resAwsDataExchangeForApIs48LightSvg = { id: "resAwsDataExchangeForApIs48LightSvg", name: "AWS Data Exchange for APIs", icon: _resAwsDataExchangeForApIs48LightSvg };
-export const resAwsGlueCrawler48LightSvg = { id: "resAwsGlueCrawler48LightSvg", name: "AWS Glue | Crawler", icon: _resAwsGlueCrawler48LightSvg };
-export const resAwsGlueDataCatalog48LightSvg = { id: "resAwsGlueDataCatalog48LightSvg", name: "AWS Glue | Data Catalog", icon: _resAwsGlueDataCatalog48LightSvg };
-export const resAwsLakeFormationDataLake48LightSvg = { id: "resAwsLakeFormationDataLake48LightSvg", name: "AWS Lake Formation | Data Lake", icon: _resAwsLakeFormationDataLake48LightSvg };
-export const resAmazonCloudSearchSearchDocuments48LightSvg = { id: "resAmazonCloudSearchSearchDocuments48LightSvg", name: "Amazon CloudSearch | Search Documents", icon: _resAmazonCloudSearchSearchDocuments48LightSvg };
-export const resAmazonEmrCluster48LightSvg = { id: "resAmazonEmrCluster48LightSvg", name: "Amazon EMR | Cluster", icon: _resAmazonEmrCluster48LightSvg };
-export const resAmazonEmrEmrEngine48LightSvg = { id: "resAmazonEmrEmrEngine48LightSvg", name: "Amazon EMR | EMR Engine", icon: _resAmazonEmrEmrEngine48LightSvg };
-export const resAmazonEmrHdfsCluster48LightSvg = { id: "resAmazonEmrHdfsCluster48LightSvg", name: "Amazon EMR | HDFS Cluster", icon: _resAmazonEmrHdfsCluster48LightSvg };
-export const resAmazonMskAmazonMskConnect48LightSvg = { id: "resAmazonMskAmazonMskConnect48LightSvg", name: "Amazon MSK | Amazon MSK Connect", icon: _resAmazonMskAmazonMskConnect48LightSvg };
-export const resAmazonRedshiftDenseComputeNode48LightSvg = { id: "resAmazonRedshiftDenseComputeNode48LightSvg", name: "Amazon Redshift | Dense Compute Node", icon: _resAmazonRedshiftDenseComputeNode48LightSvg };
-export const resAmazonRedshiftDenseStorageNode48LightSvg = { id: "resAmazonRedshiftDenseStorageNode48LightSvg", name: "Amazon Redshift | Dense Storage Node", icon: _resAmazonRedshiftDenseStorageNode48LightSvg };
-export const resAmazonRedshiftMl48LightSvg = { id: "resAmazonRedshiftMl48LightSvg", name: "Amazon Redshift | ML", icon: _resAmazonRedshiftMl48LightSvg };
-export const resAmazonRedshiftRa348LightSvg = { id: "resAmazonRedshiftRa348LightSvg", name: "Amazon Redshift | RA3", icon: _resAmazonRedshiftRa348LightSvg };
+export const resAwsGlueCrawler48LightSvg = { id: "resAwsGlueCrawler48LightSvg", name: "AWS Glue / Crawler", icon: _resAwsGlueCrawler48LightSvg };
+export const resAwsGlueDataCatalog48LightSvg = { id: "resAwsGlueDataCatalog48LightSvg", name: "AWS Glue / Data Catalog", icon: _resAwsGlueDataCatalog48LightSvg };
+export const resAwsLakeFormationDataLake48LightSvg = { id: "resAwsLakeFormationDataLake48LightSvg", name: "AWS Lake Formation / Data Lake", icon: _resAwsLakeFormationDataLake48LightSvg };
+export const resAmazonCloudSearchSearchDocuments48LightSvg = { id: "resAmazonCloudSearchSearchDocuments48LightSvg", name: "Amazon CloudSearch / Search Documents", icon: _resAmazonCloudSearchSearchDocuments48LightSvg };
+export const resAmazonEmrCluster48LightSvg = { id: "resAmazonEmrCluster48LightSvg", name: "Amazon EMR / Cluster", icon: _resAmazonEmrCluster48LightSvg };
+export const resAmazonEmrEmrEngine48LightSvg = { id: "resAmazonEmrEmrEngine48LightSvg", name: "Amazon EMR / EMR Engine", icon: _resAmazonEmrEmrEngine48LightSvg };
+export const resAmazonEmrHdfsCluster48LightSvg = { id: "resAmazonEmrHdfsCluster48LightSvg", name: "Amazon EMR / HDFS Cluster", icon: _resAmazonEmrHdfsCluster48LightSvg };
+export const resAmazonMskAmazonMskConnect48LightSvg = { id: "resAmazonMskAmazonMskConnect48LightSvg", name: "Amazon MSK / Amazon MSK Connect", icon: _resAmazonMskAmazonMskConnect48LightSvg };
+export const resAmazonRedshiftDenseComputeNode48LightSvg = { id: "resAmazonRedshiftDenseComputeNode48LightSvg", name: "Amazon Redshift / Dense Compute Node", icon: _resAmazonRedshiftDenseComputeNode48LightSvg };
+export const resAmazonRedshiftDenseStorageNode48LightSvg = { id: "resAmazonRedshiftDenseStorageNode48LightSvg", name: "Amazon Redshift / Dense Storage Node", icon: _resAmazonRedshiftDenseStorageNode48LightSvg };
+export const resAmazonRedshiftMl48LightSvg = { id: "resAmazonRedshiftMl48LightSvg", name: "Amazon Redshift / ML", icon: _resAmazonRedshiftMl48LightSvg };
+export const resAmazonRedshiftRa348LightSvg = { id: "resAmazonRedshiftRa348LightSvg", name: "Amazon Redshift / RA3", icon: _resAmazonRedshiftRa348LightSvg };
