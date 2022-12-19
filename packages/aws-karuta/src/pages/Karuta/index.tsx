@@ -17,10 +17,20 @@ export default function Karuta(props: Props) {
       }}
     >
       {correctIcon ? (
-        <div className="row" style={{ alignItems: "end", gap: "1em" }}>
-          <div style={{ fontSize: "1em" }}>Click</div>
-          <div style={{ fontSize: "1.5em" }}>{correctIcon.name}</div>
-          <div style={{ fontSize: "1em" }}>time: {formatTime(time)}</div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "end",
+            gap: "1em",
+            padding: "1em",
+          }}
+        >
+          <div>
+            <span style={{ fontSize: "1em" }}>Click </span>
+            <span style={{ fontSize: "1.5em" }}>{correctIcon.name}</span>
+          </div>
+          <div style={{ fontSize: "1em" }}>{formatTime(time)}</div>
         </div>
       ) : (
         <div className="row" style={{ justifyContent: "center" }}>
