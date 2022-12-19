@@ -16,7 +16,7 @@ export default function Catalog(props: Props) {
               key={icon.id}
               src={icon.icon}
               className="no-border"
-              style={{ height: "4em" }}
+              style={{ height: "4em", width: "4em" }}
               alt={icon.name}
             />
           </div>

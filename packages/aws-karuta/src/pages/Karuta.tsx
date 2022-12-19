@@ -60,7 +60,7 @@ export default function Karuta(props: Props) {
               <img
                 src={icon.icon}
                 className="no-border"
-                style={{ height: "4em" }}
+                style={{ height: "4em", width: "4em" }}
                 alt={icon.name}
               />
             </div>
