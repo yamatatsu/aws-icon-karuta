@@ -22,8 +22,6 @@ export default function useGame(props: Props) {
     icons: state.icons,
     correctIcon,
     incorrectClick: state.incorrectClick,
-    correctCount: state.correctCount,
-    totalIconCount: state.icons.length,
     complete,
     handleClickIcon: (id: string) => {
       tapIcon(id);

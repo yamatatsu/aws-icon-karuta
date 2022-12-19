@@ -1,11 +1,10 @@
 import { useReducer } from "react";
+import { Icon, IconDict } from "../../../icons";
 
-type IconSource = { id: string; name: string; icon: string };
-type InitialIconDict = Record<string, IconSource>;
-type Icon = IconSource & { removed?: true };
+type IconState = Icon & { removed?: true };
 
 export type Props = {
-  initialIconDict: InitialIconDict;
+  initialIconDict: IconDict;
   randomSort: <T>(arr: T[]) => T[];
 };
 
@@ -24,8 +23,8 @@ export default function useGameState(props: Props) {
 }
 
 type State = {
-  icons: Icon[];
-  questions: Icon[];
+  icons: IconState[];
+  questions: IconState[];
   correctCount: number;
   incorrectClick?: { id: string };
 };
@@ -51,8 +50,12 @@ const reducer = (state: State, id: string): State => {
 /**
  * change icon state immutably
  */
-function setIconState(icons: Icon[], id: string, newIconState: Partial<Icon>) {
-  return icons.reduce<Icon[]>(
+function setIconState(
+  icons: IconState[],
+  id: string,
+  newIconState: Partial<IconState>
+) {
+  return icons.reduce<IconState[]>(
     (acc, icon) => [
       ...acc,
       icon.id === id ? { ...icon, ...newIconState } : icon,

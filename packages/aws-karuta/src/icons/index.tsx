@@ -2,6 +2,9 @@ import * as Services from "./Architecture-Service-Icons_07312022";
 import * as Categories from "./Category-Icons_07312022";
 import * as Resources from "./Resource-Icons_07312022";
 
+export type Icon = { id: string; name: string; icon: string };
+export type IconDict = Record<string, Icon>;
+
 export { Services, Categories, Resources };
 
 export const service16Icons = {
