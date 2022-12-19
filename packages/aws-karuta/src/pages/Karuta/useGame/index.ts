@@ -32,7 +32,7 @@ export default function useGame(props: Props) {
 }
 
 function formatTime(ms: number) {
-  const totalSec = Math.floor(ms / 1_000);
+  const totalSec = Math.ceil(ms / 1_000);
 
   const min = Math.floor(totalSec / 60).toString();
   const sec = Math.floor(totalSec % 60).toString();
