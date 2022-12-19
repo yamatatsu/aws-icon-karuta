@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "postbuild": "cp ./dist/index.html ./dist/404.html",
     "preview": "vite preview",
     "test": "vitest",
     "gen-icon-index-files": "node scripts/create-icon-files.js"
