@@ -97,8 +97,6 @@ export default function Karuta(props: Props) {
       <FinishModal
         open={complete && openFinishModal}
         time={time}
-        correctCount={correctCount}
-        totalIconCount={totalIconCount}
         onClose={() => setOpenFinishModal(false)}
       />
     </div>

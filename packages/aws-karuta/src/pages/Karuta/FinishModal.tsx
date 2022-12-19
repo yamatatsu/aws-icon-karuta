@@ -1,8 +1,6 @@
 type Props = {
   open: boolean;
   time: string;
-  correctCount: number;
-  totalIconCount: number;
   onClose: () => void;
 };
 export default function FinishModal(props: Props) {
@@ -25,11 +23,18 @@ export default function FinishModal(props: Props) {
             X
           </label>
 
-          <h4 className="modal-title">Finish!</h4>
-          <p className="modal-text">Time {props.time}</p>
-          <p className="modal-text">
-            Correct {props.correctCount}/{props.totalIconCount}
-          </p>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <h3 className="modal-title" style={{ marginBottom: "1rem" }}>
+              Finish!
+            </h3>
+            <p className="modal-text">Time {props.time}</p>
+          </div>
         </div>
       </div>
     </>
