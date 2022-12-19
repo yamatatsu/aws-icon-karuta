@@ -1,9 +1,21 @@
+import { useState } from "react";
 import useGame, { Props as UseGameProps } from "./useGame";
+import FinishModal from "./FinishModal";
 
 type Props = UseGameProps;
 export default function Karuta(props: Props) {
-  const { time, icons, correctIcon, incorrectClick, handleClickIcon } =
-    useGame(props);
+  const {
+    time,
+    icons,
+    correctIcon,
+    correctCount,
+    totalIconCount,
+    incorrectClick,
+    finish,
+    handleClickIcon,
+  } = useGame(props);
+
+  const [openFinishModal, setOpenFinishModal] = useState(true);
 
   return (
     <div
@@ -30,7 +42,7 @@ export default function Karuta(props: Props) {
             <span style={{ fontSize: "1em" }}>Click </span>
             <span style={{ fontSize: "1.5em" }}>{correctIcon.name}</span>
           </div>
-          <div style={{ fontSize: "1em" }}>{formatTime(time)}</div>
+          <div style={{ fontSize: "1em" }}>{time}</div>
         </div>
       ) : (
         <div className="row" style={{ justifyContent: "center" }}>
@@ -82,16 +94,15 @@ export default function Karuta(props: Props) {
           </div>
         ))}
       </div>
+      <FinishModal
+        open={finish && openFinishModal}
+        time={time}
+        correctCount={correctCount}
+        totalIconCount={totalIconCount}
+        onClose={() => setOpenFinishModal(false)}
+      />
     </div>
   );
-}
-
-function formatTime(ms: number) {
-  const totalSec = Math.floor(ms / 1_000);
-
-  const min = Math.floor(totalSec / 60).toString();
-  const sec = Math.floor(totalSec % 60).toString();
-  return `${min}:${sec.padStart(2, "0")}`;
 }
 
 export function randomSort<T>(arr: T[]): T[] {

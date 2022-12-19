@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useState } from "react";
+import { useEffect, useState } from "react";
 
 export type Props = {
   ms: number;
@@ -6,15 +6,18 @@ export type Props = {
 
 export default function useTimer({ ms }: Props) {
   const [startAt] = useState(Date.now());
-  const now = useNow(startAt);
+  const { now, stop } = useNow(startAt);
 
-  return Math.max(0, ms - (now - startAt));
+  return { time: Math.max(0, ms - (now - startAt)), stop };
 }
 
 function useNow(startAt: number) {
   const [now, setNow] = useState(startAt);
+  const [stopped, setStopped] = useState(false);
 
   useEffect(() => {
+    if (stopped) return;
+
     const handle = setInterval(() => {
       setNow(Date.now());
     }, 100);
@@ -22,7 +25,7 @@ function useNow(startAt: number) {
     return () => {
       clearInterval(handle);
     };
-  });
+  }, [stopped]);
 
-  return now;
+  return { now, stop: () => setStopped(true) };
 }

@@ -14,16 +14,13 @@ export default function useGameState(props: Props) {
 
   const initialIcons = Object.values(initialIconDict);
 
-  const [state, tapIcon] = useReducer(reducer, {
+  const initialState = {
     icons: initialIcons,
     questions: randomSort(initialIcons),
     correctCount: 0,
-  });
+  };
 
-  const { icons, questions, correctCount, incorrectClick } = state;
-  const correctIcon = questions[correctCount];
-
-  return { icons, correctIcon, incorrectClick, tapIcon };
+  return useReducer(reducer, initialState);
 }
 
 type State = {
