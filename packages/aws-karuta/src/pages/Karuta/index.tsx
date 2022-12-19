@@ -2,7 +2,7 @@ import useGame, { Props as UseGameProps } from "./useGame";
 
 type Props = UseGameProps;
 export default function Karuta(props: Props) {
-  const { icons, correctIcon, incorrectClick, handleClickIcon } =
+  const { time, icons, correctIcon, incorrectClick, handleClickIcon } =
     useGame(props);
 
   return (
@@ -20,6 +20,7 @@ export default function Karuta(props: Props) {
         <div className="row" style={{ alignItems: "end", gap: "1em" }}>
           <div style={{ fontSize: "1em" }}>Click</div>
           <div style={{ fontSize: "1.5em" }}>{correctIcon.name}</div>
+          <div style={{ fontSize: "1em" }}>time: {formatTime(time)}</div>
         </div>
       ) : (
         <div className="row" style={{ justifyContent: "center" }}>
@@ -73,6 +74,14 @@ export default function Karuta(props: Props) {
       </div>
     </div>
   );
+}
+
+function formatTime(ms: number) {
+  const totalSec = Math.floor(ms / 1_000);
+
+  const min = Math.floor(totalSec / 60).toString();
+  const sec = Math.floor(totalSec % 60).toString();
+  return `${min}:${sec.padStart(2, "0")}`;
 }
 
 export function randomSort<T>(arr: T[]): T[] {

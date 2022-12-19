@@ -9,12 +9,12 @@ export type Props = {
   randomSort: <T>(arr: T[]) => T[];
 };
 
-export default function useGame(props: Props) {
+export default function useGameState(props: Props) {
   const { initialIconDict, randomSort } = props;
 
   const initialIcons = Object.values(initialIconDict);
 
-  const [state, handleClickIcon] = useReducer(reducer, {
+  const [state, tapIcon] = useReducer(reducer, {
     icons: initialIcons,
     questions: randomSort(initialIcons),
     correctCount: 0,
@@ -23,7 +23,7 @@ export default function useGame(props: Props) {
   const { icons, questions, correctCount, incorrectClick } = state;
   const correctIcon = questions[correctCount];
 
-  return { icons, correctIcon, incorrectClick, handleClickIcon };
+  return { icons, correctIcon, incorrectClick, tapIcon };
 }
 
 type State = {
