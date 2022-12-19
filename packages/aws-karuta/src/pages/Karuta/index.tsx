@@ -1,19 +1,9 @@
-import { useReducer } from "react";
-import { _16 } from "../icons/Architecture-Service-Icons_07312022/Arch_Blockchain";
+import useGame, { Props as UseGameProps } from "./useGame";
 
-type IconSource = { id: string; name: string; icon: string };
-type InitialIconDict = Record<string, IconSource>;
-type Icon = IconSource & { removed?: true };
-
-type Props = {
-  initialIconDict: InitialIconDict;
-  randomSort: <T>(arr: T[]) => T[];
-};
+type Props = UseGameProps;
 export default function Karuta(props: Props) {
-  const { icons, correctIcon, incorrectClick, handleClickIcon } = useGame(
-    props.initialIconDict,
-    props.randomSort
-  );
+  const { icons, correctIcon, incorrectClick, handleClickIcon } =
+    useGame(props);
 
   return (
     <div
@@ -82,59 +72,6 @@ export default function Karuta(props: Props) {
         ))}
       </div>
     </div>
-  );
-}
-
-type State = {
-  icons: Icon[];
-  questions: Icon[];
-  incorrectClick?: { id: string };
-};
-
-const reducer = (state: State, id: string): State => {
-  const { icons, questions } = state;
-  const [correctIcon] = questions;
-
-  if (id === correctIcon.id) {
-    return {
-      icons: setIconState(state.icons, id, { removed: true }),
-      questions: questions.slice(1),
-    };
-  } else {
-    return {
-      ...state,
-      incorrectClick: { id },
-    };
-  }
-};
-
-function useGame(
-  initialIconDict: InitialIconDict,
-  randomSort: <T>(arr: T[]) => T[]
-) {
-  const initialIcons = Object.values(initialIconDict);
-
-  const [state, handleClickIcon] = useReducer(reducer, {
-    icons: initialIcons,
-    questions: randomSort(initialIcons),
-  });
-
-  const { icons, questions, incorrectClick } = state;
-  const [correctIcon] = questions;
-
-  return { icons, correctIcon, incorrectClick, handleClickIcon };
-}
-
-/**
- * change icon state immutably
- */
-function setIconState(icons: Icon[], id: string, newIconState: Partial<Icon>) {
-  return icons.reduce<Icon[]>(
-    (acc, icon) => [
-      ...acc,
-      icon.id === id ? { ...icon, ...newIconState } : icon,
-    ],
-    []
   );
 }
 

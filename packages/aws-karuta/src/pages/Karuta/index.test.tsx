@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom";
 import { render, screen, fireEvent } from "@testing-library/react";
-import Karuta from "./Karuta";
+import Karuta from ".";
 
 const dummySort: <T>(a: T[]) => T[] = (a) => a;
 const initialIcons = {
