@@ -6,7 +6,7 @@ export type Props = UseGameStateProps;
 
 export default function useGame(props: Props) {
   const [state, tapIcon] = useGameState(props);
-  const { time, stop } = useTimer({ ms: 60_000 });
+  const { time, stop } = useTimer();
 
   const correctIcon = state.questions[state.correctCount];
   const complete = state.questions.length === state.correctCount;
@@ -18,23 +18,15 @@ export default function useGame(props: Props) {
   }, [complete]);
 
   return {
-    time: formatTime(time),
+    time,
     icons: state.icons,
     correctIcon,
     incorrectClick: state.incorrectClick,
     correctCount: state.correctCount,
     totalIconCount: state.icons.length,
-    finish: time === 0 || complete,
+    complete,
     handleClickIcon: (id: string) => {
       tapIcon(id);
     },
   };
-}
-
-function formatTime(ms: number) {
-  const totalSec = Math.ceil(ms / 1_000);
-
-  const min = Math.floor(totalSec / 60).toString();
-  const sec = Math.floor(totalSec % 60).toString();
-  return `${min}:${sec.padStart(2, "0")}`;
 }

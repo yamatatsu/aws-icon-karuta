@@ -11,7 +11,7 @@ export default function Karuta(props: Props) {
     correctCount,
     totalIconCount,
     incorrectClick,
-    finish,
+    complete,
     handleClickIcon,
   } = useGame(props);
 
@@ -95,7 +95,7 @@ export default function Karuta(props: Props) {
         ))}
       </div>
       <FinishModal
-        open={finish && openFinishModal}
+        open={complete && openFinishModal}
         time={time}
         correctCount={correctCount}
         totalIconCount={totalIconCount}

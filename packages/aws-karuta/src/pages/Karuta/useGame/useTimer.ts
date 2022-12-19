@@ -1,14 +1,10 @@
 import { useEffect, useState } from "react";
 
-export type Props = {
-  ms: number;
-};
-
-export default function useTimer({ ms }: Props) {
+export default function useTimer() {
   const [startAt] = useState(Date.now());
   const { now, stop } = useNow(startAt);
 
-  return { time: Math.max(0, ms - (now - startAt)), stop };
+  return { time: formatTime(now - startAt), stop };
 }
 
 function useNow(startAt: number) {
@@ -28,4 +24,12 @@ function useNow(startAt: number) {
   }, [stopped]);
 
   return { now, stop: () => setStopped(true) };
+}
+
+function formatTime(ms: number) {
+  const totalSec = Math.floor(ms / 1_000);
+
+  const min = Math.floor(totalSec / 60).toString();
+  const sec = Math.floor(totalSec % 60).toString();
+  return `${min}:${sec.padStart(2, "0")}`;
 }
