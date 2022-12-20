@@ -9,7 +9,9 @@ const initialIcons = {
 };
 
 test("initial view", async () => {
-  render(<Karuta initialIconDict={initialIcons} randomSort={dummySort} />);
+  render(
+    <Karuta title="" initialIconDict={initialIcons} randomSort={dummySort} />
+  );
 
   expect(screen.queryByTestId("icon1")).toBeVisible();
   expect(screen.queryByTestId("icon2")).toBeVisible();
@@ -21,7 +23,9 @@ test("initial view", async () => {
 });
 
 test("not masked when incorrect", async () => {
-  render(<Karuta initialIconDict={initialIcons} randomSort={dummySort} />);
+  render(
+    <Karuta title="" initialIconDict={initialIcons} randomSort={dummySort} />
+  );
 
   fireEvent.click(screen.getByTestId("icon2"));
 
@@ -31,7 +35,9 @@ test("not masked when incorrect", async () => {
 });
 
 test("masked when correct", async () => {
-  render(<Karuta initialIconDict={initialIcons} randomSort={dummySort} />);
+  render(
+    <Karuta title="" initialIconDict={initialIcons} randomSort={dummySort} />
+  );
 
   fireEvent.click(screen.getByTestId("icon1"));
 
@@ -40,7 +46,9 @@ test("masked when correct", async () => {
 });
 
 test("completion", async () => {
-  render(<Karuta initialIconDict={initialIcons} randomSort={dummySort} />);
+  render(
+    <Karuta title="" initialIconDict={initialIcons} randomSort={dummySort} />
+  );
 
   fireEvent.click(screen.getByTestId("icon1"));
 
