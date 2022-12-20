@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div className="paper" style={{ margin: 0 }}>
+    <div className="paper margin-none padding-small">
       <ul>
         <li>Karuta</li>
         <ul>
