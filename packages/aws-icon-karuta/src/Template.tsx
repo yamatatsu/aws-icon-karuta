@@ -33,7 +33,7 @@ function NavHeader() {
     <nav className="border fixed split-nav">
       <div className="nav-brand">
         <h3>
-          <Link to="/">Icon Karuta</Link>
+          <Link to="/">AWS Icon Karuta</Link>
         </h3>
       </div>
       <Menu
