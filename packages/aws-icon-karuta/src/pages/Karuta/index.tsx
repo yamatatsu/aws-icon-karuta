@@ -18,10 +18,9 @@ export default function Karuta(props: Props) {
 
   return (
     <div
-      className="paper"
+      className="paper padding-none"
       style={{
         margin: 0,
-        padding: "1em 0.5em",
         display: "flex",
         flexDirection: "column",
         height: "100%",
@@ -29,16 +28,19 @@ export default function Karuta(props: Props) {
     >
       <PaperHeader correctIcon={correctIcon} time={time} />
       <div
-        className="row flex-center"
+        className="row flex-center margin-none"
         style={{
-          margin: 0,
           columnGap: 8,
           rowGap: 16,
           overflow: "scroll",
         }}
       >
         {icons.map((icon) => (
-          <div key={icon.id} style={{ position: "relative", margin: 0 }}>
+          <div
+            key={icon.id}
+            className="margin-none"
+            style={{ position: "relative" }}
+          >
             <IconCard
               icon={icon}
               shake={icon.id === incorrectClick?.id}
@@ -77,12 +79,12 @@ function PaperHeader({
 
   return (
     <div
+      className="padding"
       style={{
         display: "flex",
         justifyContent: "space-between",
         alignItems: "end",
         gap: "1em",
-        padding: "1em",
       }}
     >
       <div>

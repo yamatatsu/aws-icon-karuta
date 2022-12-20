@@ -6,39 +6,51 @@ export default function Home() {
       <ul>
         <li>Karuta</li>
         <ul>
-          <ListItem to="karuta/category16">Category icons (size 16)</ListItem>
-          <ListItem to="karuta/category32">Category icons (size 32)</ListItem>
-          <ListItem to="karuta/category48">Category icons (size 48)</ListItem>
-          <ListItem to="karuta/category64">Category icons (size 64)</ListItem>
-          <ListItem to="karuta/service16">Service icons (size 16)</ListItem>
-          <ListItem to="karuta/service32">Service icons (size 32)</ListItem>
-          <ListItem to="karuta/service48">Service icons (size 48)</ListItem>
-          <ListItem to="karuta/service64">Service icons (size 64)</ListItem>
-          <ListItem to="karuta/resource">Resource icons</ListItem>
+          <li className="margin-top-small">Category Icons</li>
+          <div style={{ display: "flex", gap: "1rem" }}>
+            <Link to="karuta/category16">16px</Link>
+            <Link to="karuta/category32">32px</Link>
+            <Link to="karuta/category48">48px</Link>
+            <Link to="karuta/category64">64px</Link>
+          </div>
+
+          <li className="margin-top-small">Service icons</li>
+          <div style={{ display: "flex", gap: "1rem" }}>
+            <Link to="karuta/service16">16px</Link>
+            <Link to="karuta/service32">32px</Link>
+            <Link to="karuta/service48">48px</Link>
+            <Link to="karuta/service64">64px</Link>
+          </div>
+
+          <li className="margin-top-small">Resource icons</li>
+          <div style={{ display: "flex", gap: "1rem" }}>
+            <Link to="karuta/resource">48px</Link>
+          </div>
         </ul>
 
-        <li>Icon catalog</li>
+        <li className="margin-top-small">Icon catalog</li>
         <ul>
-          <ListItem to="catalog/category16">Category icons (size 16)</ListItem>
-          <ListItem to="catalog/category32">Category icons (size 32)</ListItem>
-          <ListItem to="catalog/category48">Category icons (size 48)</ListItem>
-          <ListItem to="catalog/category64">Category icons (size 64)</ListItem>
-          <ListItem to="catalog/service16">Service icons (size 16)</ListItem>
-          <ListItem to="catalog/service32">Service icons (size 32)</ListItem>
-          <ListItem to="catalog/service48">Service icons (size 48)</ListItem>
-          <ListItem to="catalog/service64">Service icons (size 64)</ListItem>
-          <ListItem to="catalog/resource">Resource icons</ListItem>
+          <div style={{ display: "flex", gap: "1rem" }}>
+            <Link to="catalog/category16">16px</Link>
+            <Link to="catalog/category32">32px</Link>
+            <Link to="catalog/category48">48px</Link>
+            <Link to="catalog/category64">64px</Link>
+          </div>
+
+          <li className="margin-top-small">Service icons</li>
+          <div style={{ display: "flex", gap: "1rem" }}>
+            <Link to="catalog/service16">16px</Link>
+            <Link to="catalog/service32">32px</Link>
+            <Link to="catalog/service48">48px</Link>
+            <Link to="catalog/service64">64px</Link>
+          </div>
+
+          <li className="margin-top-small">Resource icons</li>
+          <div style={{ display: "flex", gap: "1rem" }}>
+            <Link to="catalog/resource">48px</Link>
+          </div>
         </ul>
       </ul>
     </div>
-  );
-}
-
-type ListItemProps = { to: string; children?: React.ReactNode };
-function ListItem(props: ListItemProps) {
-  return (
-    <li>
-      <Link to={props.to}>{props.children}</Link>
-    </li>
   );
 }

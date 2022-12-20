@@ -4,8 +4,8 @@ type Props = {
 };
 export default function Catalog(props: Props) {
   return (
-    <div className="paper" style={{ margin: 0 }}>
-      <h2 style={{ margin: 0 }}>{props.title}</h2>
+    <div className="paper margin-none padding">
+      <h2 className="margin-none">{props.title}</h2>
       <div
         className="row flex-center"
         style={{ marginTop: 80, rowGap: 80, columnGap: 8 }}
