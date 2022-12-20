@@ -1,13 +1,13 @@
 {
-  "name": "aws-karuta",
+  "name": "aws-icon-karuta",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run -w aws-karuta dev",
-    "build": "npm run -w aws-karuta build",
-    "preview": "npm run -w aws-karuta preview",
-    "test": "npm run -w aws-karuta test",
+    "dev": "npm run -w aws-icon-karuta dev",
+    "build": "npm run -w aws-icon-karuta build",
+    "preview": "npm run -w aws-icon-karuta preview",
+    "test": "npm run -w aws-icon-karuta test",
     "prepare": "husky install"
   },
   "author": "",

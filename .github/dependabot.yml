@@ -10,6 +10,6 @@ updates:
     schedule:
       interval: "weekly"
   - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/packages/aws-karuta/" # Location of package manifests
+    directory: "/packages/aws-icon-karuta/" # Location of package manifests
     schedule:
       interval: "weekly"
