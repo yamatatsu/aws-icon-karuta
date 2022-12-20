@@ -7,7 +7,7 @@ export type IconDict = Record<string, Icon>;
 
 export { Services, Categories, Resources };
 
-export const service16Icons = {
+export const service16Level3Icons = {
   ...Services.archAnalytics.arch16,
   ...Services.archAppIntegration.arch16,
   ...Services.archBlockchain._16,
@@ -36,7 +36,7 @@ export const service16Icons = {
   ...Services.archStorage._16,
   ...Services.archVrAr.arch16,
 };
-export const service32Icons = {
+export const service32Level3Icons = {
   ...Services.archAnalytics.arch32,
   ...Services.archAppIntegration.arch32,
   ...Services.archBlockchain._32,
@@ -65,7 +65,7 @@ export const service32Icons = {
   ...Services.archStorage._32,
   ...Services.archVrAr.arch32,
 };
-export const service48Icons = {
+export const service48Level3Icons = {
   ...Services.archAnalytics.arch48,
   ...Services.archAppIntegration.arch48,
   ...Services.archBlockchain._48,
@@ -94,7 +94,7 @@ export const service48Icons = {
   ...Services.archStorage._48,
   ...Services.archVrAr.arch48,
 };
-export const service64Icons = {
+export const service64Level3Icons = {
   ...Services.archAnalytics.arch64,
   ...Services.archAppIntegration.arch64,
   ...Services.archBlockchain._64,
@@ -123,6 +123,247 @@ export const service64Icons = {
   ...Services.archStorage._64,
   ...Services.archVrAr.arch64,
 };
+
+const level2Services = [
+  "archAmazonAthena",
+  "archAmazonKinesis",
+  "archAmazonKinesisFirehose",
+  "archAmazonManagedStreamingForApacheKafka",
+  "archAmazonOpenSearchService",
+  "archAmazonQuickSight",
+  "archAmazonRedshift",
+  "archAwsGlue",
+  "archAmazonApiGateway",
+  "archAmazonEventBridge",
+  "archAmazonSimpleNotificationService",
+  "archAmazonSimpleQueueService",
+  "archAwsAppSync",
+  "archAwsStepFunctions",
+  "archAmazonManagedBlockchain",
+  "archAmazonQuantumLedgerDatabase",
+  "archAlexaForBusiness",
+  "archAmazonChime",
+  "archAmazonConnect",
+  "archAmazonHoneycode",
+  "archAmazonPinpoint",
+  "archAmazonSimpleEmailService",
+  "archAwsBudgets",
+  "archAwsCostExplorer",
+  "archAmazonEc2",
+  "archAmazonEc2AutoScaling",
+  "archAmazonLightsail",
+  "archAwsAppRunner",
+  "archAwsBatch",
+  "archAwsElasticBeanstalk",
+  "archAwsFargate",
+  "archAwsLambda",
+  "archAmazonElasticContainerRegistry",
+  "archAmazonElasticContainerService",
+  "archAmazonElasticKubernetesService",
+  "archAwsRePost",
+  "archAwsSupport",
+  "archAwsTrainingCertification",
+  "archAmazonAurora",
+  "archAmazonDocumentDb",
+  "archAmazonDynamoDb",
+  "archAmazonElastiCache",
+  "archAmazonMemoryDbForRedis",
+  "archAmazonNeptune",
+  "archAmazonRds",
+  "archAmazonTimestream",
+  "archAwsCloud9",
+  "archAwsCloudDevelopmentKit",
+  "archAwsCloudShell",
+  "archAwsCodeBuild",
+  "archAwsCodeCommit",
+  "archAwsCodeDeploy",
+  "archAwsCodePipeline",
+  "archAwsCommandLineInterface",
+  "archAwsToolsAndSdKs",
+  "archAwsXRay",
+  "archAmazonWorkSpaces",
+  "archAwsAmplify",
+  "archAwsIoTCore",
+  "archAmazonCodeGuru",
+  "archAmazonCodeWhisperer",
+  "archAmazonKendra",
+  "archAmazonLex",
+  "archAmazonPolly",
+  "archAmazonRekognition",
+  "archAmazonSageMaker",
+  "archAmazonTextract",
+  "archAmazonTranscribe",
+  "archAmazonTranslate",
+  "archAwsDeepComposer",
+  "archAwsDeepLens",
+  "archAwsDeepRacer",
+  "archAmazonCloudWatch",
+  "archAmazonManagedGrafana",
+  "archAmazonManagedServiceForPrometheus",
+  "archAwsAppConfig",
+  "archAwsChatbot",
+  "archAwsCloudFormation",
+  "archAwsCloudTrail",
+  "archAwsConfig",
+  "archAwsControlTower",
+  "archAwsFaultInjectionSimulator",
+  "archAwsOrganizations",
+  "archAwsProton",
+  "archAwsResilienceHub",
+  "archAwsSystemsManager",
+  "archAwsWellArchitectedTool",
+  "archAmazonCloudFront",
+  "archAmazonRoute53",
+  "archAmazonVirtualPrivateCloud",
+  "archAwsAppMesh",
+  "archAwsDirectConnect",
+  "archAwsPrivateLink",
+  "archAwsTransitGateway",
+  "archElasticLoadBalancing",
+  "archAmazonBraket",
+  "archAwsRoboMaker",
+  "archAwsGroundStation",
+  "archAmazonCognito",
+  "archAmazonDetective",
+  "archAmazonGuardDuty",
+  "archAmazonInspector",
+  "archAmazonMacie",
+  "archAwsCertificateManager",
+  "archAwsFirewallManager",
+  "archAwsIamIdentityCenter",
+  "archAwsIdentityAndAccessManagement",
+  "archAwsKeyManagementService",
+  "archAwsNetworkFirewall",
+  "archAwsSecretsManager",
+  "archAwsSecurityHub",
+  "archAwsShield",
+  "archAwsWaf",
+  "archAmazonEfs",
+  "archAmazonElasticBlockStore",
+  "archAmazonSimpleStorageService",
+  "archAmazonSimpleStorageServiceGlacier",
+] as const;
+export const service16Level2Icons = Object.fromEntries(
+  level2Services.map((service) => [
+    `${service}16Svg`,
+    service16Level3Icons[`${service}16Svg`],
+  ])
+);
+export const service32Level2Icons = Object.fromEntries(
+  level2Services.map((service) => [
+    `${service}32Svg`,
+    service32Level3Icons[`${service}32Svg`],
+  ])
+);
+export const service48Level2Icons = Object.fromEntries(
+  level2Services.map((service) => [
+    `${service}48Svg`,
+    service48Level3Icons[`${service}48Svg`],
+  ])
+);
+export const service64Level2Icons = Object.fromEntries(
+  level2Services.map((service) => [
+    `${service}64Svg`,
+    service64Level3Icons[`${service}64Svg`],
+  ])
+);
+
+const level1Services = [
+  "archAmazonAthena",
+  "archAmazonKinesis",
+  "archAmazonKinesisFirehose",
+  "archAmazonOpenSearchService",
+  "archAmazonQuickSight",
+  "archAmazonRedshift",
+  "archAwsGlue",
+  "archAmazonApiGateway",
+  "archAmazonEventBridge",
+  "archAmazonSimpleNotificationService",
+  "archAmazonSimpleQueueService",
+  "archAwsAppSync",
+  "archAwsStepFunctions",
+  "archAmazonSimpleEmailService",
+  "archAwsBudgets",
+  "archAwsCostExplorer",
+  "archAmazonEc2",
+  "archAmazonEc2AutoScaling",
+  "archAwsAppRunner",
+  "archAwsBatch",
+  "archAwsFargate",
+  "archAwsLambda",
+  "archAmazonElasticContainerRegistry",
+  "archAmazonElasticContainerService",
+  "archAmazonElasticKubernetesService",
+  "archAmazonAurora",
+  "archAmazonDocumentDb",
+  "archAmazonDynamoDb",
+  "archAmazonElastiCache",
+  "archAmazonMemoryDbForRedis",
+  "archAmazonNeptune",
+  "archAmazonRds",
+  "archAmazonTimestream",
+  "archAwsCloud9",
+  "archAwsCloudDevelopmentKit",
+  "archAwsCloudShell",
+  "archAwsCodeBuild",
+  "archAwsCodeCommit",
+  "archAwsCodeDeploy",
+  "archAwsCodePipeline",
+  "archAwsAmplify",
+  "archAmazonCloudWatch",
+  "archAmazonManagedGrafana",
+  "archAmazonManagedServiceForPrometheus",
+  "archAwsAppConfig",
+  "archAwsChatbot",
+  "archAwsCloudFormation",
+  "archAwsCloudTrail",
+  "archAwsConfig",
+  "archAwsSystemsManager",
+  "archAwsWellArchitectedTool",
+  "archAmazonCloudFront",
+  "archAmazonRoute53",
+  "archAmazonVirtualPrivateCloud",
+  "archElasticLoadBalancing",
+  "archAmazonCognito",
+  "archAmazonDetective",
+  "archAmazonGuardDuty",
+  "archAmazonInspector",
+  "archAwsCertificateManager",
+  "archAwsFirewallManager",
+  "archAwsIdentityAndAccessManagement",
+  "archAwsKeyManagementService",
+  "archAwsSecretsManager",
+  "archAwsSecurityHub",
+  "archAwsShield",
+  "archAwsWaf",
+  "archAmazonElasticBlockStore",
+  "archAmazonSimpleStorageService",
+  "archAmazonSimpleStorageServiceGlacier",
+] as const;
+export const service16Level1Icons = Object.fromEntries(
+  level1Services.map((service) => [
+    `${service}16Svg`,
+    service16Level3Icons[`${service}16Svg`],
+  ])
+);
+export const service32Level1Icons = Object.fromEntries(
+  level1Services.map((service) => [
+    `${service}32Svg`,
+    service32Level3Icons[`${service}32Svg`],
+  ])
+);
+export const service48Level1Icons = Object.fromEntries(
+  level1Services.map((service) => [
+    `${service}48Svg`,
+    service48Level3Icons[`${service}48Svg`],
+  ])
+);
+export const service64Level1Icons = Object.fromEntries(
+  level1Services.map((service) => [
+    `${service}64Svg`,
+    service64Level3Icons[`${service}64Svg`],
+  ])
+);
 
 export const category16Icons = Categories.archCategory16;
 export const category32Icons = Categories.archCategory32;
@@ -154,8 +395,8 @@ export const resourceIcons = {
 };
 
 export const testIcons = {
-  [service64Icons.archAlexaForBusiness64Svg.id]:
-    service64Icons.archAlexaForBusiness64Svg,
-  [service64Icons.archAmazonApiGateway64Svg.id]:
-    service64Icons.archAmazonApiGateway64Svg,
+  [service64Level3Icons.archAlexaForBusiness64Svg.id]:
+    service64Level3Icons.archAlexaForBusiness64Svg,
+  [service64Level3Icons.archAmazonApiGateway64Svg.id]:
+    service64Level3Icons.archAmazonApiGateway64Svg,
 };
