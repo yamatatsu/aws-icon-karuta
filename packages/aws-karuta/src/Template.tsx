@@ -30,7 +30,10 @@ function NavHeader() {
       </div>
       <Menu
         items={[
-          <a target="_blank" href="https://github.com/yamatatsu/aws-karuta">
+          <a
+            target="_blank"
+            href="https://github.com/yamatatsu/aws-icon-karuta"
+          >
             Github
           </a>,
         ]}

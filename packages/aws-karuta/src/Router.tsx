@@ -63,7 +63,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: "/aws-karuta" }
+  { basename: "/aws-icon-karuta" }
 );
 
 export default function Router() {
