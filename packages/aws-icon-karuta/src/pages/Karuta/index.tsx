@@ -53,6 +53,7 @@ export default function Karuta(props: Props) {
 
       <FinishModal
         open={complete && openFinishModal}
+        title={props.title}
         time={time}
         onClose={() => setOpenFinishModal(false)}
       />
