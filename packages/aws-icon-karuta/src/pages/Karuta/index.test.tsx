@@ -1,64 +1,75 @@
 import "@testing-library/jest-dom";
 import { render, screen, fireEvent } from "@testing-library/react";
 import Karuta from ".";
+import { testIcons } from "../../icons";
 
 const dummySort: <T>(a: T[]) => T[] = (a) => a;
-const initialIcons = {
-  icon1: { id: "icon1", name: "Icon 1", icon: "url-of-icon1" },
-  icon2: { id: "icon2", name: "Icon 2", icon: "url-of-icon2" },
-};
 
 test("initial view", async () => {
   render(
-    <Karuta title="" initialIconDict={initialIcons} randomSort={dummySort} />
+    <Karuta title="" initialIconDict={testIcons} randomSort={dummySort} />
   );
 
-  expect(screen.queryByTestId("icon1")).toBeVisible();
-  expect(screen.queryByTestId("icon2")).toBeVisible();
+  expect(screen.queryByTestId("archAlexaForBusiness64Svg")).toBeVisible();
+  expect(screen.queryByTestId("archAmazonApiGateway64Svg")).toBeVisible();
 
-  expect(screen.queryByTestId("icon1_mask")).not.toBeInTheDocument();
-  expect(screen.queryByTestId("icon2_mask")).not.toBeInTheDocument();
+  expect(
+    screen.queryByTestId("archAlexaForBusiness64Svg_mask")
+  ).not.toBeInTheDocument();
+  expect(
+    screen.queryByTestId("archAmazonApiGateway64Svg_mask")
+  ).not.toBeInTheDocument();
 
   expect(screen.queryByTestId("completion")).not.toBeInTheDocument();
 });
 
 test("not masked when incorrect", async () => {
   render(
-    <Karuta title="" initialIconDict={initialIcons} randomSort={dummySort} />
+    <Karuta title="" initialIconDict={testIcons} randomSort={dummySort} />
   );
 
-  fireEvent.click(screen.getByTestId("icon2"));
+  fireEvent.click(screen.getByTestId("archAmazonApiGateway64Svg"));
 
-  expect(screen.queryByTestId("icon1_mask")).not.toBeInTheDocument();
-  expect(screen.queryByTestId("icon2_mask")).not.toBeInTheDocument();
-  expect(screen.queryByTestId("icon2")).toHaveClass("shake");
+  expect(
+    screen.queryByTestId("archAlexaForBusiness64Svg_mask")
+  ).not.toBeInTheDocument();
+  expect(
+    screen.queryByTestId("archAmazonApiGateway64Svg_mask")
+  ).not.toBeInTheDocument();
+  expect(screen.queryByTestId("archAmazonApiGateway64Svg")).toHaveClass(
+    "shake"
+  );
 });
 
 test("masked when correct", async () => {
   render(
-    <Karuta title="" initialIconDict={initialIcons} randomSort={dummySort} />
+    <Karuta title="" initialIconDict={testIcons} randomSort={dummySort} />
   );
 
-  fireEvent.click(screen.getByTestId("icon1"));
+  fireEvent.click(screen.getByTestId("archAlexaForBusiness64Svg"));
 
-  expect(screen.queryByTestId("icon1_mask")).toBeVisible();
-  expect(screen.queryByTestId("icon2_mask")).not.toBeInTheDocument();
+  expect(screen.queryByTestId("archAlexaForBusiness64Svg_mask")).toBeVisible();
+  expect(
+    screen.queryByTestId("archAmazonApiGateway64Svg_mask")
+  ).not.toBeInTheDocument();
 });
 
 test("completion", async () => {
   render(
-    <Karuta title="" initialIconDict={initialIcons} randomSort={dummySort} />
+    <Karuta title="" initialIconDict={testIcons} randomSort={dummySort} />
   );
 
-  fireEvent.click(screen.getByTestId("icon1"));
+  fireEvent.click(screen.getByTestId("archAlexaForBusiness64Svg"));
 
-  expect(screen.queryByTestId("icon1_mask")).toBeVisible();
-  expect(screen.queryByTestId("icon2_mask")).not.toBeInTheDocument();
+  expect(screen.queryByTestId("archAlexaForBusiness64Svg_mask")).toBeVisible();
+  expect(
+    screen.queryByTestId("archAmazonApiGateway64Svg_mask")
+  ).not.toBeInTheDocument();
   expect(screen.queryByTestId("completion")).not.toBeInTheDocument();
 
-  fireEvent.click(screen.getByTestId("icon2"));
+  fireEvent.click(screen.getByTestId("archAmazonApiGateway64Svg"));
 
-  expect(screen.queryByTestId("icon1_mask")).toBeVisible();
-  expect(screen.queryByTestId("icon2_mask")).toBeVisible();
+  expect(screen.queryByTestId("archAlexaForBusiness64Svg_mask")).toBeVisible();
+  expect(screen.queryByTestId("archAmazonApiGateway64Svg_mask")).toBeVisible();
   expect(screen.queryByTestId("completion")).toBeVisible();
 });
