@@ -4,7 +4,9 @@ export default function useTimer() {
   const [startAt] = useState(Date.now());
   const { now, stop } = useNow(startAt);
 
-  return { time: formatTime(now - startAt), stop };
+  const rawTime = now - startAt;
+
+  return { time: formatTime(rawTime), rawTime, stop };
 }
 
 function useNow(startAt: number) {
