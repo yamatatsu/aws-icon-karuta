@@ -3,26 +3,29 @@ import Template from "./Template";
 import Home from "./pages/Home";
 import Karuta, { randomSort } from "./pages/Karuta";
 import Catalog from "./pages/Catalog";
+import WhatsThis from "./pages/WhatsThis";
 import ErrorPage from "./pages/ErrorPage";
 import * as icons from "./icons";
 import "./index.css";
 
 const karutaNodes = (
   [
-    ["karuta/service16", icons.service16Icons],
-    ["karuta/service32", icons.service32Icons],
-    ["karuta/service48", icons.service48Icons],
-    ["karuta/service64", icons.service64Icons],
-    ["karuta/category16", icons.category16Icons],
-    ["karuta/category32", icons.category32Icons],
-    ["karuta/category48", icons.category48Icons],
-    ["karuta/category64", icons.category64Icons],
-    ["karuta/resource", icons.resourceIcons],
-    ["karuta/test", icons.testIcons],
+    ["karuta/service16", "Service icons (size 16)", icons.service16Icons],
+    ["karuta/service32", "Service icons (size 32)", icons.service32Icons],
+    ["karuta/service48", "Service icons (size 48)", icons.service48Icons],
+    ["karuta/service64", "Service icons (size 64)", icons.service64Icons],
+    ["karuta/category16", "Category icons (size 16)", icons.category16Icons],
+    ["karuta/category32", "Category icons (size 32)", icons.category32Icons],
+    ["karuta/category48", "Category icons (size 48)", icons.category48Icons],
+    ["karuta/category64", "Category icons (size 64)", icons.category64Icons],
+    ["karuta/resource", "Resource icons", icons.resourceIcons],
+    ["karuta/test", "Test icons", icons.testIcons],
   ] as const
-).map(([path, icons]) => ({
+).map(([path, title, icons]) => ({
   path,
-  element: <Karuta initialIconDict={icons} randomSort={randomSort} />,
+  element: (
+    <Karuta title={title} initialIconDict={icons} randomSort={randomSort} />
+  ),
 }));
 
 const catalogNodes = (
@@ -58,6 +61,7 @@ const router = createBrowserRouter(
       ),
       children: [
         { path: "/", element: <Home /> },
+        { path: "/whats-this", element: <WhatsThis /> },
         ...karutaNodes,
         ...catalogNodes,
       ],

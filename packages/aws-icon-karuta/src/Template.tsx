@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useReducer } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import ReactGA from "react-ga4";
@@ -29,6 +29,7 @@ export default function Template(props: Props) {
 }
 
 function NavHeader() {
+  const [open, toggle] = useReducer((open) => !open, false);
   return (
     <nav className="border fixed split-nav">
       <div className="nav-brand">
@@ -38,6 +39,7 @@ function NavHeader() {
       </div>
       <Menu
         items={[
+          <Link to="/whats-this">What's is this?</Link>,
           <a
             target="_blank"
             href="https://github.com/yamatatsu/aws-icon-karuta"
