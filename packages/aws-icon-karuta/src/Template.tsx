@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import ReactGA from "react-ga4";
 
 type Props = { children?: React.ReactNode };
 export default function Template(props: Props) {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    ReactGA.send("pageview");
+  }, [pathname]);
+
   return (
     <>
       <NavHeader />
