@@ -9,17 +9,18 @@ export default function Home() {
         height: "100%",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
+        justifyContent: "space-evenly",
         textAlign: "center",
         gap: "3rem",
       }}
     >
+      <div className="spacer"></div>
       <h1 className="margin-none">AWS Icon Karuta</h1>
       <div
         style={{
           display: "flex",
           flexDirection: "column",
-          gap: "0.5rem",
+          gap: "1rem",
         }}
       >
         <Link className="paper-btn" to="/menu">

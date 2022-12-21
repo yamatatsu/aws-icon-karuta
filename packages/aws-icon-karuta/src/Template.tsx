@@ -40,7 +40,7 @@ function NavHeader() {
       <Menu
         items={[
           <Link to="/menu">Menu</Link>,
-          <Link to="/whats-this">What's is this?</Link>,
+          <Link to="/whats-this">What's this?</Link>,
           <a
             target="_blank"
             href="https://github.com/yamatatsu/aws-icon-karuta"
