@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import ReactGA from "react-ga4";
 import useGameState, { Props as UseGameStateProps } from "./useGameState";
 import useTimer from "./useTimer";
+export type { IconState } from "./useGameState";
 
 export type Props = { title: string } & UseGameStateProps;
 

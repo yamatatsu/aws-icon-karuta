@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 import { Icon, IconDict } from "../../../icons";
 
-type IconState = Icon & { removed?: true };
+export type IconState = Icon & { removed?: true };
 
 export type Props = {
   initialIconDict: IconDict;

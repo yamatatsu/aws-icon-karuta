@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useGame, { Props as UseGameProps } from "./useGame";
+import useGame, { Props as UseGameProps, IconState } from "./useGame";
 import FinishModal from "./FinishModal";
 import { Icon } from "../../icons";
 
@@ -46,7 +46,6 @@ export default function Karuta(props: Props) {
               shake={icon.id === incorrectClick?.id}
               onClick={() => handleClickIcon(icon.id)}
             />
-            {icon.removed && <IconCardMask icon={icon} />}
           </div>
         ))}
       </div>
@@ -102,7 +101,7 @@ function IconCard({
   shake,
   onClick,
 }: {
-  icon: Icon;
+  icon: IconState;
   shake: boolean;
   onClick: () => void;
 }) {
@@ -119,23 +118,20 @@ function IconCard({
         style={{ height: "4em", width: "4em" }}
         alt={icon.name}
       />
+      {icon.removed && (
+        <div
+          data-testid={`${icon.id}_mask`}
+          style={{
+            width: "100%",
+            height: "100%",
+            background: "black",
+            opacity: "60%",
+            position: "absolute",
+            top: 0,
+          }}
+        ></div>
+      )}
     </div>
-  );
-}
-
-function IconCardMask({ icon }: { icon: Icon }) {
-  return (
-    <div
-      data-testid={`${icon.id}_mask`}
-      style={{
-        width: "100%",
-        height: "100%",
-        background: "black",
-        opacity: "60%",
-        position: "absolute",
-        top: 0,
-      }}
-    ></div>
   );
 }
 
