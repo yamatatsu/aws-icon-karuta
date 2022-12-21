@@ -14,7 +14,10 @@ export default function FinishModal(props: Props) {
     "text",
     `🎉Complete AWS Icon Karuta🎉\n\nMode: ${title}\n\nTime: ${time}\n\n`
   );
-  twitterUrl.searchParams.set("url", location.href);
+  twitterUrl.searchParams.set(
+    "url",
+    "https://yamatatsu.github.io/aws-icon-karuta"
+  );
   twitterUrl.searchParams.set("hashtags", "aws_icon_karuta");
 
   return (
