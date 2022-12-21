@@ -39,6 +39,7 @@ function NavHeader() {
       </div>
       <Menu
         items={[
+          <Link to="/menu">Menu</Link>,
           <Link to="/whats-this">What's is this?</Link>,
           <a
             target="_blank"

@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Template from "./Template";
 import Home from "./pages/Home";
+import Menu from "./pages/Menu";
 import Karuta, { randomSort } from "./pages/Karuta";
 import Catalog from "./pages/Catalog";
 import WhatsThis from "./pages/WhatsThis";
@@ -133,6 +134,7 @@ const router = createBrowserRouter(
       ),
       children: [
         { path: "/", element: <Home /> },
+        { path: "/menu", element: <Menu /> },
         { path: "/whats-this", element: <WhatsThis /> },
         ...karutaNodes,
         ...catalogNodes,
