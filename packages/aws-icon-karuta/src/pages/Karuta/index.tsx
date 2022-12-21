@@ -67,16 +67,6 @@ function PaperHeader({
   correctIcon?: Icon;
   time: string;
 }) {
-  if (!correctIcon) {
-    return (
-      <div className="row" style={{ justifyContent: "center" }}>
-        <div data-testid="completion" style={{ fontSize: "1.5em" }}>
-          🎉🎉🎉
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div
       className="padding"
@@ -87,10 +77,16 @@ function PaperHeader({
         gap: "1em",
       }}
     >
-      <div>
-        <span style={{ fontSize: "1em" }}>Click </span>
-        <span style={{ fontSize: "1.5em" }}>{correctIcon.name}</span>
-      </div>
+      {!correctIcon ? (
+        <h4 data-testid="completion" className="margin-none">
+          🎉🎉🎉
+        </h4>
+      ) : (
+        <div>
+          <span style={{ fontSize: "1em" }}>Click </span>
+          <span style={{ fontSize: "1.5em" }}>{correctIcon.name}</span>
+        </div>
+      )}
       <div style={{ fontSize: "1em" }}>{time}</div>
     </div>
   );
