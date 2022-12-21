@@ -7,6 +7,7 @@ export default function Home() {
       style={{
         display: "flex",
         height: "100%",
+        maxHeight: "40rem",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "space-evenly",
