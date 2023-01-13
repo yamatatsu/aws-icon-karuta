@@ -9,13 +9,15 @@ You can play AWS Icon Karuta [here](https://yamatatsu.github.io/aws-icon-karuta/
 
 ## Run on local
 
+Aws Icon Karuta use [pnpm](https://pnpm.io/installation).
+
 ```
-npm i
-npm run dev
+pnpm i
+pnpm dev
 ```
 
 ## Test
 
 ```
-npm test
+pnpm test
 ```

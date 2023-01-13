@@ -17,10 +17,10 @@ jobs:
           node-version: "18.x"
 
       - name: Install
-        run: npm ci
+        run: pnpm i --frozen-lockfile
 
       - name: Build
-        run: npm run -w packages/aws-icon-karuta build -- --base=/aws-icon-karuta
+        run: pnpm --enable-pre-post-scripts --filter aws-icon-karuta build --base=/aws-icon-karuta
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

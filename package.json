@@ -4,17 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run -w aws-icon-karuta dev",
-    "build": "npm run -w aws-icon-karuta build",
-    "preview": "npm run -w aws-icon-karuta preview",
-    "test": "npm run -w aws-icon-karuta test",
+    "dev": "pnpm --filter aws-icon-karuta dev",
+    "build": "pnpm --filter aws-icon-karuta build",
+    "preview": "pnpm --filter aws-icon-karuta preview",
+    "test": "pnpm --filter aws-icon-karuta test",
     "prepare": "husky install"
   },
   "author": "",
   "license": "MIT",
-  "workspaces": [
-    "packages/*"
-  ],
   "devDependencies": {
     "husky": "^8.0.2",
     "prettier": "^2.8.1"

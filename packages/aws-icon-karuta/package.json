@@ -24,6 +24,7 @@
     "@testing-library/react": "^13.4.0",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
+    "@types/testing-library__jest-dom": "^5.14.5",
     "@vitejs/plugin-react": "^2.2.0",
     "camelcase": "^7.0.1",
     "happy-dom": "^8.1.0",

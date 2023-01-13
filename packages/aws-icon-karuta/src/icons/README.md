@@ -4,4 +4,4 @@ Below is way for update these that;
 
 1. download icons
 1. deploy to `src/icons/*`
-1. `npm run gen-icon-index-files`
+1. `pnpm gen-icon-index-files`
