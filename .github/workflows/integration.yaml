@@ -36,7 +36,10 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install-test run
+        run: pnpm install
+
+      - name: Test
+        run: pnpm test run
 
       - name: Build
         run: pnpm --enable-pre-post-scripts --filter aws-icon-karuta build --base=/aws-icon-karuta/
