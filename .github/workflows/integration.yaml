@@ -1,8 +1,6 @@
 name: Deployment
 on:
-  push:
-    branches:
-      - main
+  pull-request:
 
 jobs:
   deployment:
@@ -42,9 +40,3 @@ jobs:
 
       - name: Build
         run: pnpm --enable-pre-post-scripts --filter aws-icon-karuta build --base=/aws-icon-karuta/
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./packages/aws-icon-karuta/dist
