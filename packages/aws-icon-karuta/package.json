@@ -26,7 +26,7 @@
     "@types/react-dom": "^18.0.8",
     "@types/testing-library__jest-dom": "^5.14.5",
     "@vitejs/plugin-react": "^3.0.1",
-    "camelcase": "^7.0.1",
+    "camelcase": "^8.0.0",
     "happy-dom": "^8.1.0",
     "typescript": "^4.6.4",
     "vite": "^4.0.4",
