@@ -28,7 +28,7 @@
     "@vitejs/plugin-react": "^3.0.1",
     "camelcase": "^7.0.1",
     "happy-dom": "^8.1.0",
-    "typescript": "^4.6.4",
+    "typescript": "^5.0.0",
     "vite": "^4.0.4",
     "vitest": "^0.27.1"
   }
